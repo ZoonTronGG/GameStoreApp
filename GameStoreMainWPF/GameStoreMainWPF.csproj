@@ -8,7 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="MainImg\751463.png" />
+    <None Remove="MainImg\Kategor1.PNG" />
+    <None Remove="MainImg\Kategor2.PNG" />
+    <None Remove="MainImg\Без названия.jpeg" />
+    <None Remove="MainImg\Снимок.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\GameStore.BLL\GameStore.BLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="MainImg\751463.png" />
+    <Resource Include="MainImg\Kategor1.PNG" />
+    <Resource Include="MainImg\Kategor2.PNG" />
+    <Resource Include="MainImg\Без названия.jpeg" />
+    <Resource Include="MainImg\Снимок.PNG" />
   </ItemGroup>
 
 </Project>
