@@ -6,8 +6,13 @@ public class DataPopulator
 {
 	public void PopulateData()
 	{
+	
 		using (var context = new DataContext())
 		{
+			if (context.Games.Any())
+			{
+				return;
+			}
 			var game1 = new Game
 			{
 				Name = "Game 1",

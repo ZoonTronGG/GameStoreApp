@@ -24,6 +24,7 @@ namespace GameStoreMainWPF
         public MainWindow()
         {
             InitializeComponent();
+            // Заполняет базу данными
             DataPopulator dataPopulator = new DataPopulator();
             dataPopulator.PopulateData();
 
