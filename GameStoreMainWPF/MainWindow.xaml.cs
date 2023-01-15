@@ -1,4 +1,5 @@
-﻿using GameStore.DAL.Data;
+﻿using GameStore.BLL;
+using GameStore.DAL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,11 +24,15 @@ namespace GameStoreMainWPF
     {
         public MainWindow()
         {
+            var rs = new RamService();
+
+            MessageBox.Show(rs.GetRamById(1).Info.ToString());
             InitializeComponent();
             // Заполняет базу данными
-            DataPopulator dataPopulator = new DataPopulator();
-            dataPopulator.PopulateData();
+            //DataPopulator dataPopulator = new DataPopulator();
+            //dataPopulator.PopulateData();
 
+            
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace GameStore.DAL.Data;
 
-internal class Repository<T> : IRepository<T> where T : class
+public class Repository<T> : IRepository<T> where T : class
 {
     private readonly DataContext _context;
     public Repository(DataContext context)
