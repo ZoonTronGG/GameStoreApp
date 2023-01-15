@@ -10,9 +10,9 @@ public class Game
     public string Description { get; set; } = null!;
 
     public virtual Publisher? Publisher { get; set; }
-    public virtual OperationSystem? GameOperationSystem { get; set; }
+    public virtual SystemRequirement? SystemRequirement { get; set; }
 
-
+    public virtual ICollection<OperationSystem>? OperationSystems { get; set; }
     public virtual ICollection<Genre>? Genres { get; set; }
     public virtual ICollection<Pictire>? Pictures { get; set; }
     public virtual ICollection<GameVideo>? Videos { get; set; }
