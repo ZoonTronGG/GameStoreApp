@@ -26,17 +26,22 @@ namespace GameStoreMainWPF
         }
         private void svLineUp(object sender, RoutedEventArgs e)
         {
-            MainScrollViewer.ScrollToVerticalOffset(800);
+            MainScrollViewer.ScrollToVerticalOffset(200);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ScrollViewer.ScrollToHorizontalOffset(100);
+            ScrollViewer.ScrollToHorizontalOffset(50);
         }
 
         private void ScrollViewer_MouseWheel(object sender, MouseWheelEventArgs e)
         {
             e.Handled = false;
+        }
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            MainScrollViewer.ScrollToVerticalOffset(800);
         }
     }
 }
