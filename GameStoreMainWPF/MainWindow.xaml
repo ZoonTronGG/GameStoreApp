@@ -87,7 +87,7 @@
                             <RowDefinition Height="0.6*"/>
                         </Grid.RowDefinitions>
                         <Button Grid.Column="1" Grid.Row="1" Background="#00BFFF">
-                            <Image Source="/751463.png"></Image>
+                            <Image Source="MainImg/751463.png"></Image>
                         </Button>
                     </Grid>
                 </Grid>
@@ -108,7 +108,7 @@
 
                 <DockPanel Grid.Row="0" Grid.ColumnSpan="2">
                     <DockPanel Grid.Column="0" Grid.Row="0">
-                        <Image Source="/Без названия.jpeg"/>
+                        <Image Source="MainImg/Без названия.jpeg"/>
                     </DockPanel>
                     <Grid Grid.Column="1">
                         <Grid.ColumnDefinitions>
@@ -126,19 +126,19 @@
                         </DockPanel>
 
                         <DockPanel Grid.Column="1" Grid.Row="1">
-                            <Image Source="/Снимок.PNG" Margin="10" Stretch="Fill"/>
+                            <Image Source="MainImg/Снимок.PNG" Margin="10" Stretch="Fill"/>
                         </DockPanel>
 
                         <DockPanel Grid.Column="1" Grid.Row="2">
-                            <Image Source="/Снимок.PNG" Margin="10" Stretch="Fill"/>
+                            <Image Source="MainImg/Снимок.PNG" Margin="10" Stretch="Fill"/>
                         </DockPanel>
 
                         <DockPanel Grid.Column="0" Grid.Row="1">
-                            <Image Source="/Снимок.PNG" Margin="10" Stretch="Fill"/>
+                            <Image Source="MainImg/Снимок.PNG" Margin="10" Stretch="Fill"/>
                         </DockPanel>
 
                         <DockPanel Grid.Column="0" Grid.Row="2">
-                            <Image Source="/Снимок.PNG" Margin="10" Stretch="Fill"/>
+                            <Image Source="MainImg/Снимок.PNG" Margin="10" Stretch="Fill"/>
                         </DockPanel>
                         <DockPanel>
                             <TextBlock></TextBlock>
@@ -162,12 +162,12 @@
 
 
                         <DockPanel Grid.Column="0">
-                            <Image Source="/Kategor1.PNG" Margin="10" Stretch="Fill" >
+                            <Image Source="MainImg/Kategor1.PNG" Margin="10" Stretch="Fill" >
 
                             </Image>
                         </DockPanel>
                         <DockPanel Grid.Column="1">
-                            <Image Source="/Kategor2.PNG" Margin="10" Stretch="Fill" >
+                            <Image Source="MainImg/Kategor2.PNG" Margin="10" Stretch="Fill" >
 
                             </Image>
                         </DockPanel>
