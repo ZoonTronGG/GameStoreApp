@@ -1,6 +1,6 @@
 ﻿namespace GameStore.DAL.Models;
 
-public class GamePublisher
+public class Publisher
 {
     public int Id { get; set; }
     public string Name { get; set; } = null!;

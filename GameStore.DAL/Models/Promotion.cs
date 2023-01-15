@@ -1,6 +1,6 @@
 ﻿namespace GameStore.DAL.Models;
 
-public class GamePromotion
+public class Promotion
 {
     public int Id { get; set; }
     public int Procent { get; set; }

@@ -1,6 +1,6 @@
 ﻿namespace GameStore.DAL.Models;
 
-public class GameReview
+public class Review
 {
     public int Id { get; set; }
     public string Title { get; set; } = null!;

@@ -1,6 +1,6 @@
 ﻿namespace GameStore.DAL.Models;
 
-public class GamePictire
+public class Pictire
 {
     public int Id { get; set; }
     public string PictureUrl { get; set; } = null!;

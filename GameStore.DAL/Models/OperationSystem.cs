@@ -1,6 +1,6 @@
 ﻿namespace GameStore.DAL.Models;
 
-public class GameOperationSystem
+public class OperationSystem
 {
     public int Id { get; set; }
     public int FreeSpace { get; set; }
