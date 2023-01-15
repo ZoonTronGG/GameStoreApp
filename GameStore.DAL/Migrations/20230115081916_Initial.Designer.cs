@@ -11,7 +11,6 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GameStore.DAL.Migrations
 {
-    [DbContext(typeof(DataContext))]
     [Migration("20230115081916_Initial")]
     partial class Initial
     {
