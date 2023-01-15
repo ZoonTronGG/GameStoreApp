@@ -6,8 +6,179 @@
         xmlns:local="clr-namespace:GameStoreMainWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Window.Resources>
+        <Style x:Key="MainMenuBar">
+            <Setter Property="Control.HorizontalAlignment" Value="Stretch"></Setter>
+            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.FontSize" Value="15"></Setter>
+            <Setter Property="Control.FontWeight"  Value="Bold"></Setter>
+            <Setter Property="ItemsControl.Foreground" Value="#FFFAFA"/>
 
-    </Grid>
+        </Style>
+        <Style x:Key="BackGroundForMainMenu">
+            <Setter Property="Control.Background" Value="Blue"/>
+
+        </Style>
+    </Window.Resources>
+    <ScrollViewer x:Name="MainScrollViewer">
+        <Grid Height="1000">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="0.2*"/>
+
+                <RowDefinition  Height="10*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="0.1*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Grid Grid.Column="1" Style="{StaticResource BackGroundForMainMenu}" Height="38" Grid.RowSpan="2" VerticalAlignment="Bottom">
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform AngleX="20" CenterX="0.5" CenterY="0.5" AngleY="86"/>
+                                <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF18B6F9" Offset="0"/>
+                        <GradientStop Color="#FF164592" Offset="1"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1.9*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="1.2"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="1.3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="0" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None">Ваш магазин</Hyperlink></TextBlock>
+                <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="1" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None" Click="svLineUp">Новое и примечательное</Hyperlink></TextBlock>
+                <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="2" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None">Каегории</Hyperlink></TextBlock>
+                <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="3" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None">Магазин очков</Hyperlink></TextBlock>
+                <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="4" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None">Новости</Hyperlink></TextBlock>
+                <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="5" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None">Лабаратории</Hyperlink></TextBlock>
+                <Grid Grid.Column="6" Margin="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <DockPanel>
+                        <TextBox Background="#4682B4" Style="{StaticResource MainMenuBar}" DockPanel.Dock="Bottom" TextWrapping="Wrap"  ScrollViewer.HorizontalScrollBarVisibility="Auto" TextAlignment="Center" Foreground="#FF403A3A" Height="auto" >поиск</TextBox>
+                    </DockPanel>
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.6*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="0.6*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.6*"/>
+                            <RowDefinition Height="4*"/>
+                            <RowDefinition Height="0.6*"/>
+                        </Grid.RowDefinitions>
+                        <Button Grid.Column="1" Grid.Row="1" Background="#00BFFF">
+                            <Image Source="/751463.png"></Image>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1" Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.8*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.87*"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="240"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+
+                <DockPanel Grid.Row="0" Grid.ColumnSpan="2">
+                    <DockPanel Grid.Column="0" Grid.Row="0">
+                        <Image Source="/Без названия.jpeg"/>
+                    </DockPanel>
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition Height="0.5*"/>
+                        </Grid.RowDefinitions>
+                        <DockPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+                            <TextBlock TextAlignment="Center" FontSize="20" FontWeight="Bold">Dota2</TextBlock>
+                        </DockPanel>
+
+                        <DockPanel Grid.Column="1" Grid.Row="1">
+                            <Image Source="/Снимок.PNG" Margin="10" Stretch="Fill"/>
+                        </DockPanel>
+
+                        <DockPanel Grid.Column="1" Grid.Row="2">
+                            <Image Source="/Снимок.PNG" Margin="10" Stretch="Fill"/>
+                        </DockPanel>
+
+                        <DockPanel Grid.Column="0" Grid.Row="1">
+                            <Image Source="/Снимок.PNG" Margin="10" Stretch="Fill"/>
+                        </DockPanel>
+
+                        <DockPanel Grid.Column="0" Grid.Row="2">
+                            <Image Source="/Снимок.PNG" Margin="10" Stretch="Fill"/>
+                        </DockPanel>
+                        <DockPanel>
+                            <TextBlock></TextBlock>
+                        </DockPanel>
+                    </Grid>
+                </DockPanel>
+
+                <ScrollViewer VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Grid.Row="2" Grid.ColumnSpan="2" CanContentScroll="False" x:Name="ScrollViewer" PreviewMouseWheel ="ScrollViewer_MouseWheel">
+                    <Grid Grid.ColumnSpan="2" Width="1200" Grid.Row="2" >
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+
+                        </Grid.ColumnDefinitions>
+
+
+
+                        <DockPanel Grid.Column="0">
+                            <Image Source="/Kategor1.PNG" Margin="10" Stretch="Fill" >
+
+                            </Image>
+                        </DockPanel>
+                        <DockPanel Grid.Column="1">
+                            <Image Source="/Kategor2.PNG" Margin="10" Stretch="Fill" >
+
+                            </Image>
+                        </DockPanel>
+
+                    </Grid>
+                </ScrollViewer>
+                <WrapPanel Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click"/>
+                    <Button Width="50" Height="25" Margin="15,0,15,0" />
+                </WrapPanel>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
 </Window>
