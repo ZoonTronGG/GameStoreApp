@@ -6,6 +6,6 @@
         public int Procent { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public int GameId { get; set; }
+        public virtual Game? Games { get; set; }
     }
 }

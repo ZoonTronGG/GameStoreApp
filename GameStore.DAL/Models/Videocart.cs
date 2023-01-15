@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameStore.DAL.Models
 {
-    internal class Videocard
+    public class Videocard
     {
         public int Id { get; set; }
         public string Info { get; set; } = null!;

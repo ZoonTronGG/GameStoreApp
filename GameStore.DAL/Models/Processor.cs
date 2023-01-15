@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameStore.DAL.Models
 {
-    internal class Processor
+    public class Processor
     {
         public int Id { get; set; }
         public string Info { get; set; } = null!;

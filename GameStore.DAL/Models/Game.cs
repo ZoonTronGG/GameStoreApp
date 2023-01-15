@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameStore.DAL.Models
 {
-    internal class Game
+    public class Game
     {
         public int Id { get; set; }
         public string Name { get; set; } = null!;
@@ -15,14 +15,15 @@ namespace GameStore.DAL.Models
         public decimal Price { get; set; }
         public string Description { get; set; } = null!;
 
-        public int PublisherId { get; set; }
-        public List<int> GenreId { get; set; }
-        public int SystemRequirementId { get; set; }
-        public List<int> PictureId { get; set; }
-        public List<int> VideoId { get; set; }
-        public List<int> PromotionId { get; set; }
-        public List<int> SupportedLanguegeId { get; set; }
-        public List<int> GameOperationSystemId { get; set; }
-        public List<int> ReviewId { get; set; }
+        public virtual GamePublisher? Publisher { get; set; }
+        public virtual GameOperationSystem? GameOperationSystem { get; set; }
+
+
+        public virtual ICollection<GameGenre>? Genres { get; set; }
+        public virtual ICollection<GamePictire>? Pictures { get; set; }
+        public virtual ICollection<GameVideo>? Videos { get; set; }
+        public virtual ICollection<GamePromotion>? Promotions { get; set; }
+        public virtual ICollection<GameSupportedLanguege>? SupportedLangueges { get; set; }
+        public virtual ICollection<GameReview>? Reviews { get; set; }
     }
 }
