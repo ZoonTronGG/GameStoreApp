@@ -43,5 +43,18 @@ namespace GameStoreMainWPF
         {
             MainScrollViewer.ScrollToVerticalOffset(800);
         }
+
+        private void Image_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+
+            window1.Show();
+            this.Close();
+        }
+
+        private void Hyperlink_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

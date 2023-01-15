@@ -159,14 +159,18 @@
 
 
                         <DockPanel Grid.Column="0">
-                            <Image Source="MainImg/Kategor1.PNG" Margin="10" Stretch="Fill" >
-
-                            </Image>
+                            <TextBlock>
+                            <Hyperlink Click="Hyperlink_Click_1">
+                            <Image Source="MainImg/Kategor1.PNG" Margin="10" Stretch="Fill" Height="210"></Image>
+                            </Hyperlink>
+                            </TextBlock>
                         </DockPanel>
                         <DockPanel Grid.Column="1">
-                            <Image Source="MainImg/Kategor2.PNG" Margin="10" Stretch="Fill" >
-
-                            </Image>
+                            <TextBlock>
+                            <Hyperlink Click="Image_Click">
+                            <Image Source="MainImg/Kategor2.PNG" Margin="10" Stretch="Fill" Height="210"></Image>
+                            </Hyperlink>
+                            </TextBlock>
                         </DockPanel>
 
                     </Grid>
