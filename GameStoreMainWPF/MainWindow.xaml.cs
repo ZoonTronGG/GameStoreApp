@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameStore.DAL.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,9 @@ namespace GameStoreMainWPF
         public MainWindow()
         {
             InitializeComponent();
+            DataPopulator dataPopulator = new DataPopulator();
+            dataPopulator.PopulateData();
+
         }
     }
 }
