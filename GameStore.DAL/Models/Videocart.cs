@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace GameStore.DAL.Models;
 
-namespace GameStore.DAL.Models
+public class Videocard
 {
-    public class Videocard
-    {
-        public int Id { get; set; }
-        public string Info { get; set; } = null!;
-    }
+    public int Id { get; set; }
+    public string Info { get; set; } = null!;
 }
