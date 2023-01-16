@@ -26,8 +26,9 @@ namespace GameStoreMainWPF
         {
             var rs = new RamService();
 
-            MessageBox.Show(rs.GetItemById(1)!.Info.ToString());
+            MessageBox.Show(rs.GetItemById(3)?.Info.ToString());
             InitializeComponent();
+
             // Заполняет базу данными
             //DataPopulator dataPopulator = new DataPopulator();
             //dataPopulator.PopulateData();

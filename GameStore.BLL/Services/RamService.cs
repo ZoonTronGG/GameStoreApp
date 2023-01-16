@@ -30,15 +30,8 @@ public class RamService : IService<Ram>
 
     public void DeleteItemById(int id)
     {
-        Ram? item = _dataContext.Rams.Find(id);
-        if (item == null)
-        {
-            throw new ArgumentNullException();
-        }
-        else
-        {
-            _dataContext.Rams.Remove(item);
-        }
+        Ram? item = _dataContext.Rams.Find(id) ?? throw new ArgumentNullException();
+        _dataContext.Rams.Remove(item);
     }
 
     public void UpdateItem(Ram ram)
