@@ -142,9 +142,8 @@
                         </DockPanel>
                     </Grid>
                 </DockPanel>
-
-                <ScrollViewer VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Grid.Row="2" Grid.ColumnSpan="3" CanContentScroll="False" x:Name="ScrollViewer" PreviewMouseWheel ="ScrollViewer_MouseWheel" Margin="0,0,0,40" Grid.RowSpan="2">
-                    <Grid Grid.ColumnSpan="2" Width="1200" Grid.Row="2" >
+                <ScrollViewer IsHitTestVisible="False" Grid.Row="2" Grid.ColumnSpan="3" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" x:Name="ScrollContentBar">
+                <Grid ClipToBounds="False" x:Name="GridCategory" Grid.ColumnSpan="3" Width="1200" Grid.Row="2" SelectiveScrollingGrid.SelectiveScrollingOrientation="Horizontal">
 
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
@@ -157,7 +156,7 @@
                         </Grid.ColumnDefinitions>
 
 
-
+                    
                         <DockPanel Grid.Column="0">
                             <TextBlock>
                             <Hyperlink Click="Hyperlink_Click_1">
@@ -172,12 +171,12 @@
                             </Hyperlink>
                             </TextBlock>
                         </DockPanel>
-
-                    </Grid>
+                
+            </Grid>
                 </ScrollViewer>
                 <WrapPanel Grid.Row="3" HorizontalAlignment="Left" Margin="304,0,0,345" Grid.RowSpan="2">
                     <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click"/>
-                    <Button Width="50" Height="25" Margin="15,0,15,0" />
+                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_1"/>
                 </WrapPanel>
             </Grid>
         </Grid>

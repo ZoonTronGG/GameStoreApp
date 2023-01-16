@@ -29,10 +29,10 @@ namespace GameStoreMainWPF
             MainScrollViewer.ScrollToVerticalOffset(200);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ScrollViewer.ScrollToHorizontalOffset(50);
-        }
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    ScrollViewer.ScrollToHorizontalOffset(50);
+        //}
 
         private void ScrollViewer_MouseWheel(object sender, MouseWheelEventArgs e)
         {
@@ -54,7 +54,17 @@ namespace GameStoreMainWPF
 
         private void Hyperlink_Click_1(object sender, RoutedEventArgs e)
         {
+            
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ScrollContentBar.ScrollToHorizontalOffset(30);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ScrollContentBar.ScrollToHorizontalOffset(-30);
         }
     }
 }
