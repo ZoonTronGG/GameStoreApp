@@ -59,12 +59,27 @@ namespace GameStoreMainWPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ScrollContentBar.ScrollToHorizontalOffset(30);
+            ScrollContentBar.ScrollToHorizontalOffset(0);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            ScrollContentBar.ScrollToHorizontalOffset(-30);
+            ScrollContentBar.ScrollToHorizontalOffset(120);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ScrollContentBar.ScrollToHorizontalOffset(240);
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            ScrollContentBar.ScrollToHorizontalOffset(360);
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            ScrollContentBar.ScrollToHorizontalOffset(480);
         }
     }
 }

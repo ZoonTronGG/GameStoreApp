@@ -174,10 +174,13 @@
                 
             </Grid>
                 </ScrollViewer>
-                <WrapPanel Grid.Row="3" HorizontalAlignment="Left" Margin="304,0,0,345" Grid.RowSpan="2">
+                <DockPanel Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center">
                     <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click"/>
                     <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_1"/>
-                </WrapPanel>
+                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_2"/>
+                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_3"/>
+                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_4"/>
+                </DockPanel>
             </Grid>
         </Grid>
     </ScrollViewer>
