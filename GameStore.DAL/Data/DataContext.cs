@@ -24,7 +24,8 @@ public class DataContext : DbContext
 
     public DataContext()
     {
-        Database.EnsureCreated();
+        // Лучше использовать этот метод чтобы не потерять данные если такие есть уже в базе!
+        Database.Migrate();
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
