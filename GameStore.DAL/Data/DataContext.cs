@@ -8,21 +8,21 @@ namespace GameStore.DAL.Data;
 
 public class DataContext : DbContext
 {
-    public DbSet<Game> Games { get; set; }
-    public DbSet<Genre> Genres { get; set; }
-    public DbSet<Publisher> Publishers { get; set; }
-    public DbSet<Pictire> Pictures { get; set; }
-    public DbSet<GameVideo> Videos { get; set; }
-    public DbSet<SupportedLanguege> Languages { get; set; }
-    public DbSet<Promotion> Promotions { get; set; }
-    public DbSet<GameStore.DAL.Models.OperationSystem> OperatingSystems { get; set; }
+    public DbSet<Game> Games { get; set; } = null!;
+    public DbSet<Genre> Genres { get; set; } = null!;
+    public DbSet<Publisher> Publishers { get; set; } = null!;
+    public DbSet<Pictire> Pictures { get; set; } = null!;
+    public DbSet<GameVideo> Videos { get; set; } = null!;
+    public DbSet<SupportedLanguege> Languages { get; set; } = null!;
+    public DbSet<Promotion> Promotions { get; set; } = null!;
+    public DbSet<GameStore.DAL.Models.OperationSystem> OperatingSystems { get; set; } = null!;
 
-    public DbSet<Ram> Rams { get; set; }
-    public DbSet<Processor> Processors { get; set; }
-    public DbSet<Videocard> Videocards { get; set; }
-    public DbSet<SystemRequirement> SystemRequirements { get; set; }
-    public DbSet<Review> Reviews { get; set; }
-    public DbSet<User> Users { get; set; }
+    public DbSet<Ram> Rams { get; set; } = null!;
+    public DbSet<Processor> Processors { get; set; } = null!;
+    public DbSet<Videocard> Videocards { get; set; } = null!;
+    public DbSet<SystemRequirement> SystemRequirements { get; set; } = null!;
+    public DbSet<Review> Reviews { get; set; } = null!;
+    public DbSet<User> Users { get; set; } = null!;
 
     public DataContext()
     {
