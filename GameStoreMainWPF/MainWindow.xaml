@@ -61,7 +61,7 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="0" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None">Магазин</Hyperlink></TextBlock>
                 <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="1" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None" Click="svLineUp">Новое и примечательное</Hyperlink></TextBlock>
-                <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="2" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None" Click="Hyperlink_Click">Каегории</Hyperlink></TextBlock>
+                <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="2" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None" Click="Hyperlink_Click">Категории</Hyperlink></TextBlock>
                 <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="3" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None">Магазин очков</Hyperlink></TextBlock>
                 <Grid Grid.Column="6" Margin="3">
                     <Grid.ColumnDefinitions>
