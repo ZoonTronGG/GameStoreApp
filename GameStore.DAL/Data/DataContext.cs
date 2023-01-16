@@ -1,8 +1,6 @@
 ﻿using GameStore.DAL.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Protocols;
-using System.Configuration;
 
 namespace GameStore.DAL.Data;
 
@@ -11,7 +9,7 @@ public class DataContext : DbContext
     public DbSet<Game> Games { get; set; }
     public DbSet<Genre> Genres { get; set; }
     public DbSet<Publisher> Publishers { get; set; }
-    public DbSet<Pictire> Pictures { get; set; }
+    public DbSet<Picture> Pictures { get; set; }
     public DbSet<GameVideo> Videos { get; set; }
     public DbSet<SupportedLanguege> Languages { get; set; }
     public DbSet<Promotion> Promotions { get; set; }
@@ -30,6 +28,10 @@ public class DataContext : DbContext
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=(LocalDb)\\MSSQLLocalDB;Database=GameShop;Trusted_Connection=True;");
+		string appsettingsPath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\..\\..\\GameStore.DAL\\appsettings.json"));
+		var builder = new ConfigurationBuilder().AddJsonFile(appsettingsPath, optional: true, reloadOnChange: true);
+
+		IConfiguration configuration = builder.Build();
+		optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
     }
 }

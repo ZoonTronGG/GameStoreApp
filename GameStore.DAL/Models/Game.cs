@@ -14,7 +14,7 @@ public class Game
 
     public virtual ICollection<OperationSystem>? OperationSystems { get; set; }
     public virtual ICollection<Genre>? Genres { get; set; }
-    public virtual ICollection<Pictire>? Pictures { get; set; }
+    public virtual ICollection<Picture>? Pictures { get; set; }
     public virtual ICollection<GameVideo>? Videos { get; set; }
     public virtual ICollection<Promotion>? Promotions { get; set; }
     public virtual ICollection<SupportedLanguege>? SupportedLangueges { get; set; }

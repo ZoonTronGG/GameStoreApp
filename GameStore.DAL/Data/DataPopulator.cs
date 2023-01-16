@@ -36,9 +36,9 @@ public class DataPopulator
 				{
 					new Genre { Name = "Action" }
 				},
-				Pictures = new List<Pictire>
+				Pictures = new List<Picture>
 				{
-					new Pictire { PictureUrl = "https://example.com/game1.jpg" }
+					new Picture { PictureUrl = "https://example.com/game1.jpg" }
 				},
 				Videos = new List<GameVideo>
 				{
@@ -83,9 +83,9 @@ public class DataPopulator
 				{
 					new Genre { Name = "RPG" }
 				},
-				Pictures = new List<Pictire>
+				Pictures = new List<Picture>
 				{
-					new Pictire { PictureUrl = "https://example.com/game2.jpg" }
+					new Picture { PictureUrl = "https://example.com/game2.jpg" }
 				},
 				Videos = new List<GameVideo>
 				{
