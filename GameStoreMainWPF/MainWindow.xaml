@@ -62,7 +62,6 @@
                 <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="0" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None">Магазин</Hyperlink></TextBlock>
                 <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="1" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None" Click="svLineUp">Новое и примечательное</Hyperlink></TextBlock>
                 <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="2" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None" Click="Hyperlink_Click">Категории</Hyperlink></TextBlock>
-                <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="3" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None">Магазин очков</Hyperlink></TextBlock>
                 <Grid Grid.Column="6" Margin="3">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="6*"/>
@@ -142,7 +141,7 @@
                         </DockPanel>
                     </Grid>
                 </DockPanel>
-                <ScrollViewer IsHitTestVisible="False" Grid.Row="2" Grid.ColumnSpan="3" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" x:Name="ScrollContentBar">
+                <ScrollViewer Grid.Row="2" Grid.ColumnSpan="3" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" x:Name="ScrollContentBar">
                 <Grid ClipToBounds="False" x:Name="GridCategory" Grid.ColumnSpan="3" Width="1200" Grid.Row="2" SelectiveScrollingGrid.SelectiveScrollingOrientation="Horizontal">
 
                         <Grid.ColumnDefinitions>
@@ -156,20 +155,23 @@
                         </Grid.ColumnDefinitions>
 
 
-                    
+
                         <DockPanel Grid.Column="0">
                             <TextBlock>
-                            <Hyperlink Click="Hyperlink_Click_1">
-                            <Image Source="MainImg/Kategor1.PNG" Margin="10" Stretch="Fill" Height="210"></Image>
-                            </Hyperlink>
+                                <Hyperlink Click="Hyperlink_Click_1">
+                                    <Image Source="MainImg/Kategor1.PNG" Margin="10" Stretch="Fill" Height="210"></Image>
+                                </Hyperlink>
                             </TextBlock>
                         </DockPanel>
                         <DockPanel Grid.Column="1">
                             <TextBlock>
-                            <Hyperlink Click="Image_Click">
-                            <Image Source="MainImg/Kategor2.PNG" Margin="10" Stretch="Fill" Height="210"></Image>
-                            </Hyperlink>
+                                <Hyperlink Click="Hyperlink_Click_2">
+                                    <Image Source="MainImg/Kategor2.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
                             </TextBlock>
+                        </DockPanel>
+                        <DockPanel Grid.Column="2">
+                            <Image Source="MainImg/Kategor2.PNG" Margin="10" Stretch="Fill" Height="210" />
                         </DockPanel>
                 
             </Grid>
