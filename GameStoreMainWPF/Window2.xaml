@@ -29,6 +29,9 @@
             <Setter Property="ItemsControl.FontSize" Value="15"></Setter>
             <Setter Property="Control.FontWeight" Value="bold"></Setter>
         </Style>
+        <Style x:Key="TxtStyleForRec">
+            <Setter Property="ItemsControl.FontSize" Value="15"></Setter>
+        </Style>
     </Window.Resources>
     <Grid Height="350" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
@@ -91,34 +94,85 @@
                 </Grid>
             </Grid>
         </Grid>
-        <Grid Grid.Row="2" Grid.Column="1">
+        <Grid Grid.Row="2" Grid.Column="1" Visibility="Visible">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50"/>
-                <ColumnDefinition Width="350"/>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="50"/>
             </Grid.ColumnDefinitions>
-            <Button HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="0">
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="0" Click="Button_Click">
                 <Image Source="MainImg/left.png"/>
             </Button>
-            <Button HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3">
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3" Click="Button_Click_1">
                 <Image Source="MainImg/right.png"/>
             </Button>
-            <Image Source="MainImg/deadbydaylite.png" Grid.Column="1" Stretch="Fill"/>
-            <DockPanel Grid.Column="2">
+            
+            <Grid Grid.Column="1" Visibility="Visible" x:Name="DeadByDaylight">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="350"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            
+            <Image Source="MainImg/deadbydaylite.png" Grid.Column="0" Stretch="Fill"/>
+            <DockPanel Grid.Column="1">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="1.5*"/>
-                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="3*"/>
                         <RowDefinition Height="2*"/>
                         <RowDefinition Height="4*"/>
+                        <RowDefinition Height="8*"/>
                     </Grid.RowDefinitions>
                     <TextBlock Grid.Row="0" Style="{StaticResource NameOfGame}"> Dead By Daylight</TextBlock>
                     <TextBlock Grid.Row="1" Style="{StaticResource DateOfRelize}">Дата выхода: 14 Июня. 2016 г.</TextBlock>
-                </Grid>
+                    <WrapPanel Grid.Row="2">
+                        <Button Height="25" Margin="5,5,5,5" > Хорор </Button>
+                        <Button Height="25" Margin="5,5,5,5">Игры для нескольких человек</Button>
+                    </WrapPanel>
+                    <TextBlock Grid.Row="3" Style="{StaticResource TxtStyleForRec}">
+                        Почему вам может понравиться эта игра:<LineBreak/>
+                        <Run FontWeight="ExtraBlack">49</Run> место в лидерах
+                    </TextBlock>
+                    
+                    </Grid>
+                
             </DockPanel>
-        </Grid>
+            </Grid>
 
+
+
+            <Grid Grid.Column="1" Visibility="Collapsed" x:Name="VampireSurvivor">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="350"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="MainImg/Vampire Survivor.png" Grid.Column="0" Stretch="Fill"/>
+                <DockPanel Grid.Column="1">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="4*"/>
+                            <RowDefinition Height="8*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Style="{StaticResource NameOfGame}"> Dead By Daylight</TextBlock>
+                        <TextBlock Grid.Row="1" Style="{StaticResource DateOfRelize}">Дата выхода: 14 Июня. 2016 г.</TextBlock>
+                        <WrapPanel Grid.Row="2">
+                            <Button Height="25" Margin="5,5,5,5" >Хорор</Button>
+                            <Button Height="25" Margin="5,5,5,5">Игры для нескольких человек</Button>
+                        </WrapPanel>
+                        <TextBlock Grid.Row="3" Style="{StaticResource TxtStyleForRec}">
+                        Почему вам может понравиться эта игра:<LineBreak/>
+                        <Run FontWeight="ExtraBlack">49</Run> место в лидерах
+                        </TextBlock>
+
+                    </Grid>
+
+                </DockPanel>
+            </Grid>
+        </Grid>
         
+
+
     </Grid>
 </Window>

@@ -171,7 +171,7 @@
                             </TextBlock>
                         </DockPanel>
                         <DockPanel Grid.Column="2">
-                            <Image Source="MainImg/Kategor2.PNG" Margin="10" Stretch="Fill" Height="210" />
+                            <Image Source="MainImg/Kategor3.PNG" Margin="10" Stretch="Fill" Height="210" />
                         </DockPanel>
                 
             </Grid>

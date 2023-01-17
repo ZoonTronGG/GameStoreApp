@@ -12,10 +12,11 @@
     <None Remove="MainImg\deadbydaylite.PNG" />
     <None Remove="MainImg\Kategor1.PNG" />
     <None Remove="MainImg\Kategor2.PNG" />
+    <None Remove="MainImg\Kategor3.png" />
     <None Remove="MainImg\left.PNG" />
     <None Remove="MainImg\right.PNG" />
+    <None Remove="MainImg\Vampire Survivor.PNG" />
     <None Remove="MainImg\Без названия.jpeg" />
-    <None Remove="MainImg\Снимок экрана %282%29.png" />
     <None Remove="MainImg\Снимок.PNG" />
   </ItemGroup>
 
@@ -30,8 +31,9 @@
     <Resource Include="MainImg\Kategor2.PNG" />
     <Resource Include="MainImg\left.PNG" />
     <Resource Include="MainImg\right.PNG" />
+    <Resource Include="MainImg\Vampire Survivor.PNG" />
     <Resource Include="MainImg\Без названия.jpeg" />
-    <Resource Include="MainImg\Снимок экрана (2).png" />
+    <Resource Include="MainImg\Kategor3.png" />
     <Resource Include="MainImg\Снимок.PNG" />
   </ItemGroup>
 
