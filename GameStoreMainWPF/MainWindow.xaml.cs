@@ -1,18 +1,7 @@
-﻿using GameStore.DAL.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using GameStore.BLL.DTO;
+using GameStore.BLL.Services;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace GameStoreMainWPF
 {
@@ -25,9 +14,21 @@ namespace GameStoreMainWPF
         {
             InitializeComponent();
             // Заполняет базу данными
-            DataPopulator dataPopulator = new DataPopulator();
-            dataPopulator.PopulateData();
 
+
+
+            //RamService ramService = new RamService();
+            TestAsync();
+
+
+        }
+
+        public async Task TestAsync()
+        {
+            RamService ramService = new RamService();
+            RamDto ram = await ramService.GetItemByIdAsync(1);
+            
+            MessageBox.Show(ram.Info);
         }
     }
 }

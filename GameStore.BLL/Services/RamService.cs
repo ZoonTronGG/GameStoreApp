@@ -2,10 +2,11 @@
 using GameStore.DAL.Data;
 using GameStore.DAL.Models;
 using Microsoft.EntityFrameworkCore;
+using GameStore.BLL.DTO;
 
 namespace GameStore.BLL.Services;
 
-public class RamService : IServiceAsync<Ram>
+public class RamService : IServiceAsync<RamDto>
 {
 	private readonly DataContext _dataContext;
 	public RamService()
@@ -13,32 +14,38 @@ public class RamService : IServiceAsync<Ram>
 		_dataContext = new DataContext();
 	}
 
-	public async Task<Ram?> GetItemByIdAsync(int id)
+	public async Task<RamDto?> GetItemByIdAsync(int id)
 	{
-		return await _dataContext.Rams.FindAsync(id);
+        var ram = await _dataContext.Rams.FirstAsync(x => x.Id == id);
+		var result = new RamDto() 
+		{
+            Info = ram.Info
+        };
+		return result;
 	}
 
-	public async Task<IEnumerable<Ram>> GetAllItemsAsync()
+	public async Task<IEnumerable<RamDto>> GetAllItemsAsync()
 	{
-		return await _dataContext.Rams.ToListAsync();
+		return null;
+		//return await _dataContext.Rams.ToListAsync();
 	}
 
-	public async Task AddItemAsync(Ram ram)
+	public async Task AddItemAsync(RamDto ram)
 	{
-		await _dataContext.Rams.AddAsync(ram);
-		await _dataContext.SaveChangesAsync();
+		//await _dataContext.Rams.AddAsync(ram);
+		//await _dataContext.SaveChangesAsync();
 	}
 
 	public async Task DeleteItemByIdAsync(int id)
 	{
-		Ram? item = await _dataContext.Rams.FindAsync(id) ?? throw new ArgumentNullException();
-		_dataContext.Rams.Remove(item);
-		await _dataContext.SaveChangesAsync();
+		//Ram? item = await _dataContext.Rams.FindAsync(id) ?? throw new ArgumentNullException();
+		//_dataContext.Rams.Remove(item);
+		//await _dataContext.SaveChangesAsync();
 	}
 
-	public async Task UpdateItemAsync(Ram ram)
+	public async Task UpdateItemAsync(RamDto ram)
 	{
-		_dataContext.Rams.Update(ram);
-		await _dataContext.SaveChangesAsync();
+		//_dataContext.Rams.Update(ram);
+		//await _dataContext.SaveChangesAsync();
 	}
 }
