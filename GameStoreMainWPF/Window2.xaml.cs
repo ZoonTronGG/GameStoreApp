@@ -42,31 +42,41 @@ namespace GameStoreMainWPF
             
         }
         private int currentGridIndex = 1;
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             VampireSurvivor.Visibility = Visibility.Collapsed;
             DeadByDaylight.Visibility = Visibility.Collapsed;
+            TotalWarWarhammer3.Visibility = Visibility.Collapsed;
 
             if (currentGridIndex == 1)
                 VampireSurvivor.Visibility = Visibility.Visible;
             else if (currentGridIndex == 2)
                 DeadByDaylight.Visibility = Visibility.Visible;
-            currentGridIndex++;
-            if (currentGridIndex > 2)
-                currentGridIndex = 1;
+            else if (currentGridIndex == 3)
+                TotalWarWarhammer3.Visibility = Visibility.Visible;
+
+
+            currentGridIndex--;
+            if (currentGridIndex < 1)
+                currentGridIndex = 3;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             VampireSurvivor.Visibility = Visibility.Collapsed;
             DeadByDaylight.Visibility = Visibility.Collapsed;
+            TotalWarWarhammer3.Visibility = Visibility.Collapsed;
 
             if (currentGridIndex == 1)
                 VampireSurvivor.Visibility = Visibility.Visible;
             else if (currentGridIndex == 2)
                 DeadByDaylight.Visibility = Visibility.Visible;
+            else if (currentGridIndex == 3)
+                TotalWarWarhammer3.Visibility = Visibility.Visible;
+
             currentGridIndex++;
-            if (currentGridIndex > 2)
+            if (currentGridIndex > 3)
                 currentGridIndex = 1;
         }
     }

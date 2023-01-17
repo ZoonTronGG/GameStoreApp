@@ -128,8 +128,8 @@
                         <Button Height="25" Margin="5,5,5,5" > Хорор </Button>
                         <Button Height="25" Margin="5,5,5,5">Игры для нескольких человек</Button>
                     </WrapPanel>
-                    <TextBlock Grid.Row="3" Style="{StaticResource TxtStyleForRec}">
-                        Почему вам может понравиться эта игра:<LineBreak/>
+                    <TextBlock Grid.Row="3" Style="{StaticResource TxtStyleForRec}" Margin="5,0,0,0">
+                         - Почему вам может понравиться эта игра:<LineBreak/>
                         <Run FontWeight="ExtraBlack">49</Run> место в лидерах
                     </TextBlock>
                     
@@ -155,21 +155,54 @@
                             <RowDefinition Height="4*"/>
                             <RowDefinition Height="8*"/>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Style="{StaticResource NameOfGame}"> Dead By Daylight</TextBlock>
+                        <TextBlock Grid.Row="0" Style="{StaticResource NameOfGame}"> Vampire Survivor </TextBlock>
                         <TextBlock Grid.Row="1" Style="{StaticResource DateOfRelize}">Дата выхода: 14 Июня. 2016 г.</TextBlock>
                         <WrapPanel Grid.Row="2">
                             <Button Height="25" Margin="5,5,5,5" >Хорор</Button>
-                            <Button Height="25" Margin="5,5,5,5">Игры для нескольких человек</Button>
+                            <Button Height="25" Margin="5,5,5,5">Для 1 игрока</Button>
                         </WrapPanel>
-                        <TextBlock Grid.Row="3" Style="{StaticResource TxtStyleForRec}">
-                        Почему вам может понравиться эта игра:<LineBreak/>
-                        <Run FontWeight="ExtraBlack">49</Run> место в лидерах
+                        <TextBlock Grid.Row="3" Style="{StaticResource TxtStyleForRec}" Margin="5,0,0,0" TextWrapping="Wrap"> Пачками косить порождений ночи и дожить до рассвета! Vampire Survivors - казуальная игра в стиле готического хоррора с элементами упрощенного рогалика. Здесь каждое ваше решение может вызвать лавину последствий для орд монстров, с которыми вам предстоит столкнуться.</TextBlock>
+
+                    </Grid>
+
+                </DockPanel>
+            </Grid>
+
+            <Grid Grid.Column="1" Visibility="Collapsed" x:Name="TotalWarWarhammer3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="350"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="MainImg/TotalWarWarhammer3.png" Grid.Column="0" Stretch="Fill"/>
+                <DockPanel Grid.Column="1">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="4*"/>
+                            <RowDefinition Height="8*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Style="{StaticResource NameOfGame}"> Total War Warhammer 3</TextBlock>
+                        <TextBlock Grid.Row="1" Style="{StaticResource DateOfRelize}">Дата выхода: 14 Июня. 2016 г.</TextBlock>
+                        <WrapPanel Grid.Row="2">
+                            <Button Height="25" Margin="5,5,5,5" >Хорор</Button>
+                            <Button Height="25" Margin="5,5,5,5">Стратегия</Button>
+                        </WrapPanel>
+                        <TextBlock Grid.Row="3" Style="{StaticResource TxtStyleForRec}" Margin="5,0,0,0" TextWrapping="Wrap"> 
+                           Драматический финал трилогии Total War: WARHAMMER уже здесь. Соберите войска и войдите
+в Царство Хаоса - обитель невообразимых ужасов, где будет решаться судьба всего мира.
+Обуздаете ли вы своих демонов… или же возглавите их? 
+                            
                         </TextBlock>
 
                     </Grid>
 
                 </DockPanel>
             </Grid>
+
+
+
         </Grid>
         
 
