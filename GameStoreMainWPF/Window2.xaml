@@ -83,9 +83,19 @@
         </Grid>
         <Grid Grid.Row="2" Grid.Column="1">
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
                 <ColumnDefinition Width="450"/>
                 <ColumnDefinition/>
+                <ColumnDefinition Width="50"/>
             </Grid.ColumnDefinitions>
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="0">
+                <Image Source="MainImg/left.png"/>
+            </Button>
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3">
+                <Image Source="MainImg/right.png"/>
+            </Button>
         </Grid>
+
+        <Image Source=""/>
     </Grid>
 </Window>
