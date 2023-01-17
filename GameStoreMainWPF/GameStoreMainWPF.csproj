@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="MainImg\751463.png" />
+    <None Remove="MainImg\brotato.PNG" />
     <None Remove="MainImg\CarXDriftingRacingOnline.PNG" />
     <None Remove="MainImg\deadbydaylite.PNG" />
     <None Remove="MainImg\ForzaHorizon4.PNG" />
@@ -18,11 +19,14 @@
     <None Remove="MainImg\Kategor3.png" />
     <None Remove="MainImg\Kategory4.PNG" />
     <None Remove="MainImg\Kategory5.PNG" />
+    <None Remove="MainImg\Kategory6.PNG" />
     <None Remove="MainImg\left.PNG" />
     <None Remove="MainImg\NeedForSpeedHeat.PNG" />
     <None Remove="MainImg\Raft.PNG" />
     <None Remove="MainImg\right.PNG" />
     <None Remove="MainImg\Rust.PNG" />
+    <None Remove="MainImg\SekiroShadowsDieTwiceGOTYEdition.PNG" />
+    <None Remove="MainImg\SkulTheHeroSlayer.PNG" />
     <None Remove="MainImg\ThePastWithin.PNG" />
     <None Remove="MainImg\TotalWarWarhammer3.PNG" />
     <None Remove="MainImg\Vampire Survivor.PNG" />
@@ -37,6 +41,7 @@
 
   <ItemGroup>
     <Resource Include="MainImg\751463.png" />
+    <Resource Include="MainImg\brotato.PNG" />
     <Resource Include="MainImg\CarXDriftingRacingOnline.PNG" />
     <Resource Include="MainImg\deadbydaylite.PNG" />
     <Resource Include="MainImg\ForzaHorizon4.PNG" />
@@ -45,11 +50,14 @@
     <Resource Include="MainImg\Kategor2.PNG" />
     <Resource Include="MainImg\Kategory4.PNG" />
     <Resource Include="MainImg\Kategory5.PNG" />
+    <Resource Include="MainImg\Kategory6.PNG" />
     <Resource Include="MainImg\left.PNG" />
     <Resource Include="MainImg\NeedForSpeedHeat.PNG" />
     <Resource Include="MainImg\Raft.PNG" />
     <Resource Include="MainImg\right.PNG" />
     <Resource Include="MainImg\Rust.PNG" />
+    <Resource Include="MainImg\SekiroShadowsDieTwiceGOTYEdition.PNG" />
+    <Resource Include="MainImg\SkulTheHeroSlayer.PNG" />
     <Resource Include="MainImg\ThePastWithin.PNG" />
     <Resource Include="MainImg\TotalWarWarhammer3.PNG" />
     <Resource Include="MainImg\Vampire Survivor.PNG" />

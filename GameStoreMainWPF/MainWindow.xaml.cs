@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace GameStoreMainWPF
 {
     /// <summary>
@@ -102,6 +103,29 @@ namespace GameStoreMainWPF
 
             window5.Show();
             this.Close();
+        }
+        private void Hyperlink_Click_6(object sender, RoutedEventArgs e)
+        {
+            Window6 window6 = new Window6();
+
+            window6.Show();
+            this.Close();
+        }
+
+        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (SaerchBox.Text == "")
+            {
+                SaerchBox.Text = "Поиск";
+            }
+        }
+
+        private void SaerchBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (SaerchBox.Text == "Поиск")
+            {
+                SaerchBox.Text = "";
+            }
         }
     }
 }
