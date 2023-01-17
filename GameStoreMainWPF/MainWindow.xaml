@@ -180,8 +180,22 @@
                                 </Hyperlink>
                             </TextBlock>
                         </DockPanel>
-                
-            </Grid>
+                        <DockPanel Grid.Column="3">
+                            <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_4">
+                                    <Image Source="MainImg/Kategory4.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Grid.Column="4">
+                            <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_5">
+                                    <Image Source="MainImg/Kategory5.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                            </TextBlock>
+                        </DockPanel>
+
+                    </Grid>
                 </ScrollViewer>
                 <DockPanel Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center">
                     <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click"/>

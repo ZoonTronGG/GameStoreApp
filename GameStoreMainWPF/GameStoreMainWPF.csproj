@@ -16,9 +16,13 @@
     <None Remove="MainImg\Kategor1.PNG" />
     <None Remove="MainImg\Kategor2.PNG" />
     <None Remove="MainImg\Kategor3.png" />
+    <None Remove="MainImg\Kategory4.PNG" />
+    <None Remove="MainImg\Kategory5.PNG" />
     <None Remove="MainImg\left.PNG" />
     <None Remove="MainImg\NeedForSpeedHeat.PNG" />
+    <None Remove="MainImg\Raft.PNG" />
     <None Remove="MainImg\right.PNG" />
+    <None Remove="MainImg\Rust.PNG" />
     <None Remove="MainImg\ThePastWithin.PNG" />
     <None Remove="MainImg\TotalWarWarhammer3.PNG" />
     <None Remove="MainImg\Vampire Survivor.PNG" />
@@ -39,9 +43,13 @@
     <Resource Include="MainImg\GamesOfWar-PuzzleRpg.PNG" />
     <Resource Include="MainImg\Kategor1.PNG" />
     <Resource Include="MainImg\Kategor2.PNG" />
+    <Resource Include="MainImg\Kategory4.PNG" />
+    <Resource Include="MainImg\Kategory5.PNG" />
     <Resource Include="MainImg\left.PNG" />
     <Resource Include="MainImg\NeedForSpeedHeat.PNG" />
+    <Resource Include="MainImg\Raft.PNG" />
     <Resource Include="MainImg\right.PNG" />
+    <Resource Include="MainImg\Rust.PNG" />
     <Resource Include="MainImg\ThePastWithin.PNG" />
     <Resource Include="MainImg\TotalWarWarhammer3.PNG" />
     <Resource Include="MainImg\Vampire Survivor.PNG" />
