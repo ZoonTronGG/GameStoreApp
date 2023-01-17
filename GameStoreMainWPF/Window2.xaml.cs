@@ -49,9 +49,9 @@ namespace GameStoreMainWPF
             DeadByDaylight.Visibility = Visibility.Collapsed;
             TotalWarWarhammer3.Visibility = Visibility.Collapsed;
 
-            if (currentGridIndex == 1)
+            if (currentGridIndex == 2)
                 VampireSurvivor.Visibility = Visibility.Visible;
-            else if (currentGridIndex == 2)
+            else if (currentGridIndex == 1)
                 DeadByDaylight.Visibility = Visibility.Visible;
             else if (currentGridIndex == 3)
                 TotalWarWarhammer3.Visibility = Visibility.Visible;
@@ -68,9 +68,9 @@ namespace GameStoreMainWPF
             DeadByDaylight.Visibility = Visibility.Collapsed;
             TotalWarWarhammer3.Visibility = Visibility.Collapsed;
 
-            if (currentGridIndex == 1)
+            if (currentGridIndex == 2)
                 VampireSurvivor.Visibility = Visibility.Visible;
-            else if (currentGridIndex == 2)
+            else if (currentGridIndex == 1)
                 DeadByDaylight.Visibility = Visibility.Visible;
             else if (currentGridIndex == 3)
                 TotalWarWarhammer3.Visibility = Visibility.Visible;

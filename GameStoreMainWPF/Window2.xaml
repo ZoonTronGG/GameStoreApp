@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameStoreMainWPF"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
+        Title="Хороры" Height="450" Width="800" Background="#42525E">
     <Window.Resources>
         <Style x:Key="MainMenuBar">
             <Setter Property="Control.HorizontalAlignment" Value="Stretch"></Setter>
@@ -24,13 +24,16 @@
             <Setter Property="ItemsControl.HorizontalAlignment" Value="Center"></Setter>
             <Setter Property="Control.FontWeight" Value="bold"></Setter>
             <Setter Property="Control.FontSize" Value="24"></Setter>
+            <Setter Property="Control.Foreground" Value="White"></Setter>
         </Style>
         <Style x:Key="DateOfRelize">
             <Setter Property="ItemsControl.FontSize" Value="15"></Setter>
             <Setter Property="Control.FontWeight" Value="bold"></Setter>
+            <Setter Property="Control.Foreground" Value="White"></Setter>
         </Style>
         <Style x:Key="TxtStyleForRec">
             <Setter Property="ItemsControl.FontSize" Value="15"></Setter>
+            <Setter Property="Control.Foreground" Value="White"></Setter>
         </Style>
     </Window.Resources>
     <Grid Height="350" VerticalAlignment="Top">
@@ -122,7 +125,7 @@
                         <RowDefinition Height="4*"/>
                         <RowDefinition Height="8*"/>
                     </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="0" Style="{StaticResource NameOfGame}"> Dead By Daylight</TextBlock>
+                        <TextBlock Grid.Row="0" Style="{StaticResource NameOfGame}"> Dead By Daylight</TextBlock>
                     <TextBlock Grid.Row="1" Style="{StaticResource DateOfRelize}">Дата выхода: 14 Июня. 2016 г.</TextBlock>
                     <WrapPanel Grid.Row="2">
                         <Button Height="25" Margin="5,5,5,5" > Хорор </Button>

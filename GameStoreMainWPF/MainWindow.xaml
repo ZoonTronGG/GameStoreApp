@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameStoreMainWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Главное Меню" Height="450" Width="800" Background="#42525E">
     <Window.Resources>
         <Style x:Key="MainMenuBar">
             <Setter Property="Control.HorizontalAlignment" Value="Stretch"></Setter>
@@ -18,6 +18,9 @@
         <Style x:Key="BackGroundForMainMenu">
             <Setter Property="Control.Background" Value="Blue"/>
 
+        </Style>
+        <Style x:Key="Text">
+            <Setter Property="Control.Foreground" Value="White"></Setter>
         </Style>
     </Window.Resources>
     <ScrollViewer x:Name="MainScrollViewer">
@@ -118,7 +121,7 @@
                             <RowDefinition Height="0.5*"/>
                         </Grid.RowDefinitions>
                         <DockPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
-                            <TextBlock TextAlignment="Center" FontSize="20" FontWeight="Bold">Dota2</TextBlock>
+                            <TextBlock TextAlignment="Center" FontSize="20" FontWeight="Bold" Style="{StaticResource Text}">Dota2</TextBlock>
                         </DockPanel>
 
                         <DockPanel Grid.Column="1" Grid.Row="1">
