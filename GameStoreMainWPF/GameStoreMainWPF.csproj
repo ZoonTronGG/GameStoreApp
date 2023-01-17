@@ -9,14 +9,20 @@
 
   <ItemGroup>
     <None Remove="MainImg\751463.png" />
+    <None Remove="MainImg\CarXDriftingRacingOnline.PNG" />
     <None Remove="MainImg\deadbydaylite.PNG" />
+    <None Remove="MainImg\ForzaHorizon4.PNG" />
+    <None Remove="MainImg\GamesOfWar-PuzzleRpg.PNG" />
     <None Remove="MainImg\Kategor1.PNG" />
     <None Remove="MainImg\Kategor2.PNG" />
     <None Remove="MainImg\Kategor3.png" />
     <None Remove="MainImg\left.PNG" />
+    <None Remove="MainImg\NeedForSpeedHeat.PNG" />
     <None Remove="MainImg\right.PNG" />
+    <None Remove="MainImg\ThePastWithin.PNG" />
     <None Remove="MainImg\TotalWarWarhammer3.PNG" />
     <None Remove="MainImg\Vampire Survivor.PNG" />
+    <None Remove="MainImg\witchit.PNG" />
     <None Remove="MainImg\Без названия.jpeg" />
     <None Remove="MainImg\Снимок.PNG" />
   </ItemGroup>
@@ -27,13 +33,19 @@
 
   <ItemGroup>
     <Resource Include="MainImg\751463.png" />
+    <Resource Include="MainImg\CarXDriftingRacingOnline.PNG" />
     <Resource Include="MainImg\deadbydaylite.PNG" />
+    <Resource Include="MainImg\ForzaHorizon4.PNG" />
+    <Resource Include="MainImg\GamesOfWar-PuzzleRpg.PNG" />
     <Resource Include="MainImg\Kategor1.PNG" />
     <Resource Include="MainImg\Kategor2.PNG" />
     <Resource Include="MainImg\left.PNG" />
+    <Resource Include="MainImg\NeedForSpeedHeat.PNG" />
     <Resource Include="MainImg\right.PNG" />
+    <Resource Include="MainImg\ThePastWithin.PNG" />
     <Resource Include="MainImg\TotalWarWarhammer3.PNG" />
     <Resource Include="MainImg\Vampire Survivor.PNG" />
+    <Resource Include="MainImg\witchit.PNG" />
     <Resource Include="MainImg\Без названия.jpeg" />
     <Resource Include="MainImg\Kategor3.png" />
     <Resource Include="MainImg\Снимок.PNG" />
