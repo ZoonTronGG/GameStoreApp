@@ -19,8 +19,18 @@
             <Setter Property="Control.Background" Value="Blue"/>
 
         </Style>
+        <Style x:Key="NameOfGame">
+            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="ItemsControl.HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.FontWeight" Value="bold"></Setter>
+            <Setter Property="Control.FontSize" Value="24"></Setter>
+        </Style>
+        <Style x:Key="DateOfRelize">
+            <Setter Property="ItemsControl.FontSize" Value="15"></Setter>
+            <Setter Property="Control.FontWeight" Value="bold"></Setter>
+        </Style>
     </Window.Resources>
-    <Grid>
+    <Grid Height="350" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
             <ColumnDefinition/>
@@ -84,7 +94,7 @@
         <Grid Grid.Row="2" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50"/>
-                <ColumnDefinition Width="450"/>
+                <ColumnDefinition Width="350"/>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="50"/>
             </Grid.ColumnDefinitions>
@@ -94,8 +104,21 @@
             <Button HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="3">
                 <Image Source="MainImg/right.png"/>
             </Button>
+            <Image Source="MainImg/deadbydaylite.png" Grid.Column="1" Stretch="Fill"/>
+            <DockPanel Grid.Column="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1.5*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Style="{StaticResource NameOfGame}"> Dead By Daylight</TextBlock>
+                    <TextBlock Grid.Row="1" Style="{StaticResource DateOfRelize}">Дата выхода: 14 Июня. 2016 г.</TextBlock>
+                </Grid>
+            </DockPanel>
         </Grid>
 
-        <Image Source=""/>
+        
     </Grid>
 </Window>

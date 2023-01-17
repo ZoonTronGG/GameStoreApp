@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="MainImg\751463.png" />
+    <None Remove="MainImg\deadbydaylite.PNG" />
     <None Remove="MainImg\Kategor1.PNG" />
     <None Remove="MainImg\Kategor2.PNG" />
     <None Remove="MainImg\left.PNG" />
@@ -24,6 +25,7 @@
 
   <ItemGroup>
     <Resource Include="MainImg\751463.png" />
+    <Resource Include="MainImg\deadbydaylite.PNG" />
     <Resource Include="MainImg\Kategor1.PNG" />
     <Resource Include="MainImg\Kategor2.PNG" />
     <Resource Include="MainImg\left.PNG" />
