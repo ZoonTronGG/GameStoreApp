@@ -5,5 +5,5 @@ public class GenreDto
 	public int Id { get; set; }
 	public string Name { get; set; } = null!;
 
-	public IList<GameGenreDto> GameGenres { get; set; }
+	public IList<GameGenreDto>? GameGenres { get; set; }
 }

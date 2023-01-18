@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace GameStore.BLL.DTO;
 
-namespace GameStore.BLL.DTO
+public class UserDto
 {
-	internal class UserDto
-	{
-	}
+    public int Id { get; set; }
+    public string Login { get; set; } = null!;
+    public string Name { get; set; } = null!;
+    public string Password { get; set; } = null!;
 }

@@ -16,7 +16,7 @@ public class DataContext : DbContext
     public DbSet<GameStore.DAL.Models.OperationSystem> OperatingSystems { get; set; }
 
     public DbSet<Ram> Rams { get; set; }
-    public DbSet<Processor> Processors { get; set; }
+    public DbSet<ProcessorDto> Processors { get; set; }
     public DbSet<Videocard> Videocards { get; set; }
     public DbSet<SystemRequirement> SystemRequirements { get; set; }
     public DbSet<Review> Reviews { get; set; }

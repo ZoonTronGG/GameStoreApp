@@ -23,7 +23,7 @@ public class DataPopulator
 				Publisher = new Publisher { Name = "Publisher 1" },
 				SystemRequirement = new SystemRequirement
 				{
-					Processor = new Processor { Info = "Processor info 1" },
+					Processor = new ProcessorDto { Info = "Processor info 1" },
 					Ram = new Ram { Info = "Ram info 1" },
 					Videocard = new Videocard { Info = "Videocard info 1" },
 					FreeSpace = 100
@@ -69,7 +69,7 @@ public class DataPopulator
 				Publisher = new Publisher { Name = "Publisher 2" },
 				SystemRequirement = new SystemRequirement
 				{
-					Processor = new Processor { Info = "Processor info 2" },
+					Processor = new ProcessorDto { Info = "Processor info 2" },
 					Ram = new Ram { Info = "Ram info 2" },
 					Videocard = new Videocard { Info = "Videocard info 2" },
 					FreeSpace = 200
