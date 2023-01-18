@@ -23,6 +23,11 @@
     <None Remove="MainImg\Kategory5.PNG" />
     <None Remove="MainImg\Kategory6.PNG" />
     <None Remove="MainImg\left.PNG" />
+    <None Remove="MainImg\MainImgForzaHorizon5.PNG" />
+    <None Remove="MainImg\MainRecurceForzaHorizon5.1.PNG" />
+    <None Remove="MainImg\MainRecurceForzaHorizon5.2.PNG" />
+    <None Remove="MainImg\MainRecurceForzaHorizon5.3.PNG" />
+    <None Remove="MainImg\MainRecurceForzaHorizon5.PNG" />
     <None Remove="MainImg\NeedForSpeedHeat.PNG" />
     <None Remove="MainImg\Raft.PNG" />
     <None Remove="MainImg\right.PNG" />
@@ -58,6 +63,11 @@
     <Resource Include="MainImg\Kategory5.PNG" />
     <Resource Include="MainImg\Kategory6.PNG" />
     <Resource Include="MainImg\left.PNG" />
+    <Resource Include="MainImg\MainImgForzaHorizon5.PNG" />
+    <Resource Include="MainImg\MainRecurceForzaHorizon5.1.PNG" />
+    <Resource Include="MainImg\MainRecurceForzaHorizon5.2.PNG" />
+    <Resource Include="MainImg\MainRecurceForzaHorizon5.3.PNG" />
+    <Resource Include="MainImg\MainRecurceForzaHorizon5.PNG" />
     <Resource Include="MainImg\NeedForSpeedHeat.PNG" />
     <Resource Include="MainImg\Raft.PNG" />
     <Resource Include="MainImg\right.PNG" />
