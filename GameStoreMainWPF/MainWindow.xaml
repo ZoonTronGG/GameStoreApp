@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameStoreMainWPF"
         mc:Ignorable="d"
+        MaxWidth="900" MinWidth="700"
+        
         Title="Главное Меню" Height="450" Width="800" Background="#42525E">
     <Window.Resources>
         <Style x:Key="MainMenuBar">
@@ -153,41 +155,41 @@
                     <Grid Width="250" x:Name="NewAndRec1">
                         <TextBlock>
                                 <Hyperlink>
-                                    <Image Source="MainImg/Kategor1.PNG" Margin="10" Stretch="Fill" Height="210"></Image>
+                                    <Image Source="MainImg/britghtinfinitememmory.PNG" Margin="10" Stretch="Fill" Height="210"></Image>
                                 </Hyperlink>
                         </TextBlock>
                     </Grid>
                     <Grid Width="250" x:Name="NewAndRec2">
                         <TextBlock>
-                                <Hyperlink Click="Hyperlink_Click_2">
-                                    <Image Source="MainImg/Kategor2.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                <Hyperlink>
+                                    <Image Source="MainImg/comandcounder.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
                                 </Hyperlink>
                         </TextBlock>
                     </Grid>
                     <Grid Width="250" x:Name="NewAndRec3">
                         <TextBlock>
-                                <Hyperlink Click="Hyperlink_Click_3">
-                                    <Image Source="MainImg/Kategor3.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                <Hyperlink>
+                                    <Image Source="MainImg/runchsimulator.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
                                 </Hyperlink>
                         </TextBlock>
                     </Grid>
                     <Grid Width="250" x:Name="NewAndRec4">
                         <TextBlock>
-                                <Hyperlink Click="Hyperlink_Click_4">
-                                    <Image Source="MainImg/Kategory4.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                <Hyperlink>
+                                    <Image Source="MainImg/utawarerumono.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
                                 </Hyperlink>
                         </TextBlock>
                     </Grid>
                     <Grid Width="250" x:Name="NewAndRec5">
                         <TextBlock>
-                                <Hyperlink Click="Hyperlink_Click_5">
+                                <Hyperlink>
                                     <Image Source="MainImg/Kategory5.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
                                 </Hyperlink>
                         </TextBlock>
                     </Grid>
                     <Grid Width="250" x:Name="NewAndRec6">
                         <TextBlock>
-                                <Hyperlink Click="Hyperlink_Click_6">
+                                <Hyperlink >
                                     <Image Source="MainImg/kategory6.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
                                 </Hyperlink>
                         </TextBlock>
