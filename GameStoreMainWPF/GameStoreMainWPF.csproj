@@ -23,7 +23,12 @@
     <None Remove="MainImg\Kategory5.PNG" />
     <None Remove="MainImg\Kategory6.PNG" />
     <None Remove="MainImg\left.PNG" />
+    <None Remove="MainImg\MainImgCallOfDuty.PNG" />
     <None Remove="MainImg\MainImgForzaHorizon5.PNG" />
+    <None Remove="MainImg\MainRecurceCallOfDuty.1.PNG" />
+    <None Remove="MainImg\MainRecurceCallOfDuty.2.PNG" />
+    <None Remove="MainImg\MainRecurceCallOfDuty.3.PNG" />
+    <None Remove="MainImg\MainRecurceCallOfDuty.PNG" />
     <None Remove="MainImg\MainRecurceForzaHorizon5.1.PNG" />
     <None Remove="MainImg\MainRecurceForzaHorizon5.2.PNG" />
     <None Remove="MainImg\MainRecurceForzaHorizon5.3.PNG" />
@@ -45,6 +50,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="MainImg\MainRecurceCallOfDuty.3.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\GameStore.BLL\GameStore.BLL.csproj" />
   </ItemGroup>
 
@@ -63,7 +72,11 @@
     <Resource Include="MainImg\Kategory5.PNG" />
     <Resource Include="MainImg\Kategory6.PNG" />
     <Resource Include="MainImg\left.PNG" />
+    <Resource Include="MainImg\MainImgCallOfDuty.PNG" />
     <Resource Include="MainImg\MainImgForzaHorizon5.PNG" />
+    <Resource Include="MainImg\MainRecurceCallOfDuty.1.PNG" />
+    <Resource Include="MainImg\MainRecurceCallOfDuty.2.PNG" />
+    <Resource Include="MainImg\MainRecurceCallOfDuty.PNG" />
     <Resource Include="MainImg\MainRecurceForzaHorizon5.1.PNG" />
     <Resource Include="MainImg\MainRecurceForzaHorizon5.2.PNG" />
     <Resource Include="MainImg\MainRecurceForzaHorizon5.3.PNG" />

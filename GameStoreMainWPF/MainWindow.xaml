@@ -117,7 +117,7 @@
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Image Source="MainImg/MainImgForzaHorizon5.png" Stretch="UniformToFill" x:Name="MainImage"></Image>
+                        <Image Stretch="UniformToFill" x:Name="MainImage"></Image>
                         <Grid Grid.Column="1">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
@@ -127,10 +127,10 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
-                            <Image Source="MainImg/MainRecurceForzaHorizon5.png" x:Name="OnMainPageImg1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
-                            <Image Source="MainImg/MainRecurceForzaHorizon5.1.png" x:Name="OnMainPageImg2" Grid.Column="1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
-                            <Image Source="MainImg/MainRecurceForzaHorizon5.2.png" x:Name="OnMainPageImg3" Grid.Row="1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
-                            <Image Source="MainImg/MainRecurceForzaHorizon5.3.png" x:Name="OnMainPageImg4" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
+                            <Image x:Name="OnMainPageImg1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
+                            <Image x:Name="OnMainPageImg2" Grid.Column="1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
+                            <Image x:Name="OnMainPageImg3" Grid.Row="1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
+                            <Image x:Name="OnMainPageImg4" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
                         </Grid>
                     </Grid>
 

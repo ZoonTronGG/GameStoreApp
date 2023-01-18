@@ -21,9 +21,35 @@ namespace GameStoreMainWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly string[][] _imagePaths =
+        {
+            new[] {"MainImg/MainImgForzaHorizon5.png", "MainImg/MainRecurceForzaHorizon5.png",
+                "MainImg/MainRecurceForzaHorizon5.1.png", "MainImg/MainRecurceForzaHorizon5.2.png", "MainImg/MainRecurceForzaHorizon5.3.png"},
+            new[] {"MainImg/MainImgCallOfDuty.png", "MainImg/MainRecurceCallOfDuty.png",
+                "MainImg/MainRecurceCallOfDuty.1.png", "MainImg/MainRecurceCallOfDuty.2.png", "MainImg/MainRecurceCallOfDuty.3.png"}
+        };
+
         public MainWindow()
         {
+            var random = new Random();
+            var randomGroupImg = random.Next(0, 1);
+            string[] MainPageImg  = _imagePaths[randomGroupImg];
+
+            string img1 = MainPageImg[0];
+            string img2 = MainPageImg[1];
+            string img3 = MainPageImg[2];
+            string img4 = MainPageImg[3];
+            string img5 = MainPageImg[4];
+
+            MainImage.Source = new BitmapImage(new Uri(img1));
+            OnMainPageImg1.Source = new BitmapImage(new Uri(img2));
+            OnMainPageImg2.Source = new BitmapImage(new Uri(img3));
+            OnMainPageImg3.Source = new BitmapImage(new Uri(img4));
+            OnMainPageImg4.Source = new BitmapImage(new Uri(img5));
             InitializeComponent();
+
+
+
         }
 
 
