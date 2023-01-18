@@ -41,32 +41,19 @@ namespace GameStoreMainWPF
             MainScrollViewer.ScrollToVerticalOffset(800);
         }
 
-        
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ScrollContentBar.ScrollToHorizontalOffset(0);
+            UIElement firstChild = GridCategory.Children[0];
+            GridCategory.Children.RemoveAt(0);
+            GridCategory.Children.Add(firstChild);
         }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            ScrollContentBar.ScrollToHorizontalOffset(120);
+            UIElement lastChild = GridCategory.Children[GridCategory.Children.Count - 1];
+            GridCategory.Children.RemoveAt(GridCategory.Children.Count - 1);
+            GridCategory.Children.Insert(0, lastChild);
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            ScrollContentBar.ScrollToHorizontalOffset(240);
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            ScrollContentBar.ScrollToHorizontalOffset(360);
-        }
-
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-            ScrollContentBar.ScrollToHorizontalOffset(480);
-        }
 
         private void Hyperlink_Click_1(object sender, RoutedEventArgs e)
         {

@@ -144,71 +144,56 @@
                         </DockPanel>
                     </Grid>
                 </DockPanel>
-                <ScrollViewer Grid.Row="2" Grid.ColumnSpan="3" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" x:Name="ScrollContentBar">
-                <Grid ClipToBounds="False" x:Name="GridCategory" Grid.ColumnSpan="3" Width="1200" Grid.Row="2" SelectiveScrollingGrid.SelectiveScrollingOrientation="Horizontal">
-
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-
-                        </Grid.ColumnDefinitions>
-
-
-
-                        <DockPanel Grid.Column="0">
+                
+                
+                <DockPanel x:Name="GridCategory" Grid.ColumnSpan="3" Width="1800" Grid.Row="2">
+                    <Grid Width="250" x:Name="GridKategory1">
                             <TextBlock>
                                 <Hyperlink Click="Hyperlink_Click_1">
                                     <Image Source="MainImg/Kategor1.PNG" Margin="10" Stretch="Fill" Height="210"></Image>
                                 </Hyperlink>
                             </TextBlock>
-                        </DockPanel>
-                        <DockPanel Grid.Column="1">
+                        </Grid>
+                    <Grid Width="250" x:Name="GridKategory2">
                             <TextBlock>
                                 <Hyperlink Click="Hyperlink_Click_2">
                                     <Image Source="MainImg/Kategor2.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
                                 </Hyperlink>
                             </TextBlock>
-                        </DockPanel>
-                        <DockPanel Grid.Column="2">
+                        </Grid>
+                    <Grid Width="250" x:Name="GridKategory3">
                             <TextBlock>
                                 <Hyperlink Click="Hyperlink_Click_3">
                                     <Image Source="MainImg/Kategor3.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
                                 </Hyperlink>
                             </TextBlock>
-                        </DockPanel>
-                        <DockPanel Grid.Column="3">
+                        </Grid>
+                    <Grid Width="250" x:Name="GridKategory4">
                             <TextBlock>
                                 <Hyperlink Click="Hyperlink_Click_4">
                                     <Image Source="MainImg/Kategory4.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
                                 </Hyperlink>
                             </TextBlock>
-                        </DockPanel>
-                        <DockPanel Grid.Column="4">
+                        </Grid>
+                    <Grid Width="250" x:Name="GridKategory5">
                             <TextBlock>
                                 <Hyperlink Click="Hyperlink_Click_5">
                                     <Image Source="MainImg/Kategory5.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
                                 </Hyperlink>
                             </TextBlock>
-                        </DockPanel>
-                        <DockPanel Grid.Column="5">
+                        </Grid>
+                    <Grid Width="250" x:Name="GridKategory6">
                             <TextBlock>
                                 <Hyperlink Click="Hyperlink_Click_6">
                                     <Image Source="MainImg/kategory6.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
                                 </Hyperlink>
                             </TextBlock>
-                        </DockPanel>
-                    </Grid>
-                </ScrollViewer>
+                        </Grid>
+                    </DockPanel>
+                
                 <DockPanel Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center">
                     <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click"/>
                     <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_1"/>
-                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_2"/>
-                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_3"/>
-                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_4"/>
                 </DockPanel>
             </Grid>
         </Grid>
