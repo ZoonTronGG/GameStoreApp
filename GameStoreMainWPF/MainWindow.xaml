@@ -26,7 +26,7 @@
         </Style>
     </Window.Resources>
     <ScrollViewer x:Name="MainScrollViewer">
-        <Grid Height="1040">
+        <Grid Height="1110">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="10"/>
@@ -100,6 +100,7 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1.2*"/>
+                    <RowDefinition Height="70"/>
                     <RowDefinition Height="10"/>
                     <RowDefinition Height="240"/>
                     <RowDefinition Height="40"/>
@@ -110,48 +111,37 @@
 
 
                 <DockPanel Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,0,10" Grid.RowSpan="2">
-                    <DockPanel Grid.Column="0" Grid.Row="0">
-                        <Image Source="MainImg/Без названия.jpeg"/>
-                    </DockPanel>
-                    <Grid Grid.Column="1">
+
+                    <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="121.177"/>
-                            <ColumnDefinition Width="121.176"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="40"/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition Height="0.5*"/>
-                        </Grid.RowDefinitions>
-                        <DockPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
-                            <TextBlock TextAlignment="Center" FontSize="20" FontWeight="Bold" Style="{StaticResource Text}">Dota2</TextBlock>
-                        </DockPanel>
-
-                        <DockPanel Grid.Column="1" Grid.Row="1">
-                            <Image Source="MainImg/Снимок.PNG" Margin="10" Stretch="Fill"/>
-                        </DockPanel>
-
-                        <DockPanel Grid.Column="1" Grid.Row="2">
-                            <Image Source="MainImg/Снимок.PNG" Margin="10" Stretch="Fill"/>
-                        </DockPanel>
-
-                        <DockPanel Grid.Column="0" Grid.Row="1">
-                            <Image Source="MainImg/Снимок.PNG" Margin="10" Stretch="Fill"/>
-                        </DockPanel>
-
-                        <DockPanel Grid.Column="0" Grid.Row="2">
-                            <Image Source="MainImg/Снимок.PNG" Margin="10" Stretch="Fill"/>
-                        </DockPanel>
-                        <DockPanel>
-                            <TextBlock></TextBlock>
-                        </DockPanel>
+                        <Image Source="MainImg/Без названия.jpeg" Stretch="UniformToFill" x:Name="MainImage"></Image>
+                        <Grid Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Image Source="MainImg/Снимок.png" x:Name="OnMainPageImg1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
+                            <Image Source="MainImg/Снимок.png" x:Name="OnMainPageImg2" Grid.Column="1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
+                            <Image Source="MainImg/Снимок.png" x:Name="OnMainPageImg3" Grid.Row="1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
+                            <Image Source="MainImg/Снимок.png" x:Name="OnMainPageImg4" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
+                        </Grid>
                     </Grid>
+
                 </DockPanel>
 
+                <DockPanel Grid.Row="1">
+                    
+                    
+                </DockPanel>
 
-
-                <DockPanel x:Name="GridNewAndRec" Grid.ColumnSpan="3" Width="1800" Grid.Row="2">
+                <DockPanel x:Name="GridNewAndRec" Grid.ColumnSpan="3" Width="1800" Grid.Row="3">
                     <Grid Width="250" x:Name="NewAndRec1">
                         <TextBlock>
                                 <Hyperlink>
@@ -197,7 +187,7 @@
                 </DockPanel>
 
 
-                <DockPanel Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center" Height="40">
+                <DockPanel Grid.Row="4" Grid.ColumnSpan="3" HorizontalAlignment="Center" Height="40">
                     <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_newAndRec"/>
                     <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_newAndRec1"/>
                 </DockPanel>
@@ -205,7 +195,7 @@
                 
                 
 
-                <DockPanel x:Name="GridCategory" Grid.ColumnSpan="3" Width="1800" Grid.Row="4">
+                <DockPanel x:Name="GridCategory" Grid.ColumnSpan="3" Width="1800" Grid.Row="5">
                     <Grid Width="250" x:Name="GridKategory1">
                             <TextBlock>
                                 <Hyperlink Click="Hyperlink_Click_1">
@@ -250,7 +240,7 @@
                         </Grid>
                     </DockPanel>
 
-                <DockPanel Grid.Row="5" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+                <DockPanel Grid.Row="6" Grid.ColumnSpan="3" HorizontalAlignment="Center">
                     <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click"/>
                     <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_1"/>
                 </DockPanel>

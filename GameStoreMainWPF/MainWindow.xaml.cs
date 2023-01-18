@@ -25,6 +25,11 @@ namespace GameStoreMainWPF
         {
             InitializeComponent();
         }
+
+
+
+
+
         private void svLineUp(object sender, RoutedEventArgs e)
         {
             MainScrollViewer.ScrollToVerticalOffset(200);
@@ -126,6 +131,18 @@ namespace GameStoreMainWPF
             {
                 SaerchBox.Text = "";
             }
+        }
+        string originalsource;
+        private void OnMainPageImg1_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Image img = sender as Image;
+            originalsource = MainImage.Source.ToString();
+            MainImage.Source = img.Source;
+        }
+
+        private void OnMainPageImg1_MouseLeave(object sender, MouseEventArgs e)
+        {
+            MainImage.Source = new BitmapImage(new Uri(originalsource));
         }
     }
 }
