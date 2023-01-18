@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
 
 
 namespace GameStoreMainWPF
@@ -21,32 +22,34 @@ namespace GameStoreMainWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly string[][] _imagePaths =
-        {
-            new[] {"MainImg/MainImgForzaHorizon5.png", "MainImg/MainRecurceForzaHorizon5.png",
-                "MainImg/MainRecurceForzaHorizon5.1.png", "MainImg/MainRecurceForzaHorizon5.2.png", "MainImg/MainRecurceForzaHorizon5.3.png"},
-            new[] {"MainImg/MainImgCallOfDuty.png", "MainImg/MainRecurceCallOfDuty.png",
-                "MainImg/MainRecurceCallOfDuty.1.png", "MainImg/MainRecurceCallOfDuty.2.png", "MainImg/MainRecurceCallOfDuty.3.png"}
-        };
-
+        
         public MainWindow()
         {
-            var random = new Random();
-            var randomGroupImg = random.Next(0, 1);
-            string[] MainPageImg  = _imagePaths[randomGroupImg];
-
-            string img1 = MainPageImg[0];
-            string img2 = MainPageImg[1];
-            string img3 = MainPageImg[2];
-            string img4 = MainPageImg[3];
-            string img5 = MainPageImg[4];
-
-            MainImage.Source = new BitmapImage(new Uri(img1));
-            OnMainPageImg1.Source = new BitmapImage(new Uri(img2));
-            OnMainPageImg2.Source = new BitmapImage(new Uri(img3));
-            OnMainPageImg3.Source = new BitmapImage(new Uri(img4));
-            OnMainPageImg4.Source = new BitmapImage(new Uri(img5));
             InitializeComponent();
+            BitmapImage[,] imageArray = new BitmapImage[2, 5];
+            string[,] imagePaths = new string[2, 5] {
+
+             {"MainImg/MainImgForzaHorizon5.png", "MainImg/MainRecurceForzaHorizon5.png",
+                "MainImg/MainRecurceForzaHorizon5.1.png", "MainImg/MainRecurceForzaHorizon5.2.png", "MainImg/MainRecurceForzaHorizon5.3.png"},
+             {"MainImg/MainImgCallOfDuty.png", "MainImg/MainRecurceCallOfDuty.png",
+                "MainImg/MainRecurceCallOfDuty.1.png", "MainImg/MainRecurceCallOfDuty.2.png", "MainImg/MainRecurceCallOfDuty.3.png"}
+
+    };
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    imageArray[i, j] = new BitmapImage(new Uri(imagePaths[i, j]));
+                }
+            }
+            Random random = new Random();
+            int group = random.Next(0, imageArray.Length -1);
+            OnMainPageImg0.Source = imageArray[group, 0];
+            OnMainPageImg1.Source = imageArray[group, 1];
+            OnMainPageImg2.Source = imageArray[group,2];
+            OnMainPageImg3.Source = imageArray[group,3];
+            OnMainPageImg4.Source = imageArray[group,4];
+            
 
 
 
@@ -161,14 +164,15 @@ namespace GameStoreMainWPF
         string originalsource;
         private void OnMainPageImg1_MouseEnter(object sender, MouseEventArgs e)
         {
-            Image img = sender as Image;
-            originalsource = MainImage.Source.ToString();
-            MainImage.Source = img.Source;
+            System.Windows.Controls.Image img = sender as System.Windows.Controls.Image;
+            originalsource = OnMainPageImg0.Source.ToString();
+            OnMainPageImg0.Source = img.Source;
+            
         }
 
         private void OnMainPageImg1_MouseLeave(object sender, MouseEventArgs e)
         {
-            MainImage.Source = new BitmapImage(new Uri(originalsource));
+            OnMainPageImg0.Source = new BitmapImage(new Uri(originalsource));
         }
     }
 }
