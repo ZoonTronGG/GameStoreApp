@@ -1,11 +1,9 @@
-﻿using GameStore.BLL.DTO;
-
-namespace GameStore.BLL.Models;
+﻿namespace GameStore.BLL.DTO;
 
 public class GenreDto
 {
-    public int Id { get; set; }
-    public string Name { get; set; } = null!;
+	public int Id { get; set; }
+	public string Name { get; set; } = null!;
 
-    public List<int> GamesId { get; set; }
+	public IList<GameGenreDto> GameGenres { get; set; }
 }
