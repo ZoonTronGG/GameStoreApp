@@ -1,6 +1,6 @@
 ﻿namespace GameStore.BLL.Interfaces;
 
-public interface IServiceAsync<T>
+public interface IRepositoryAsync<T>
 {
 	public Task<T?> GetItemByIdAsync(int id);
 
