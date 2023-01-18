@@ -54,6 +54,19 @@ namespace GameStoreMainWPF
             GridCategory.Children.Insert(0, lastChild);
         }
 
+        private void Button_Click_newAndRec(object sender, RoutedEventArgs e)
+        {
+            UIElement firstChild = GridNewAndRec.Children[0];
+            GridNewAndRec.Children.RemoveAt(0);
+            GridNewAndRec.Children.Add(firstChild);
+        }
+
+        private void Button_Click_newAndRec1(object sender, RoutedEventArgs e)
+        {
+            UIElement lastChild = GridNewAndRec.Children[GridNewAndRec.Children.Count - 1];
+            GridNewAndRec.Children.RemoveAt(GridNewAndRec.Children.Count - 1);
+            GridNewAndRec.Children.Insert(0, lastChild);
+        }
 
         private void Hyperlink_Click_1(object sender, RoutedEventArgs e)
         {

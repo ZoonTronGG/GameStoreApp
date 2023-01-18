@@ -24,7 +24,7 @@
         </Style>
     </Window.Resources>
     <ScrollViewer x:Name="MainScrollViewer">
-        <Grid Height="1000">
+        <Grid Height="1040">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="10"/>
@@ -97,8 +97,10 @@
                     <ColumnDefinition Width="135*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="0.87*"/>
+                    <RowDefinition Height="1.2*"/>
                     <RowDefinition Height="10"/>
+                    <RowDefinition Height="240"/>
+                    <RowDefinition Height="40"/>
                     <RowDefinition Height="240"/>
                     <RowDefinition Height="40"/>
                     <RowDefinition/>
@@ -144,9 +146,64 @@
                         </DockPanel>
                     </Grid>
                 </DockPanel>
+
+
+
+                <DockPanel x:Name="GridNewAndRec" Grid.ColumnSpan="3" Width="1800" Grid.Row="2">
+                    <Grid Width="250" x:Name="NewAndRec1">
+                        <TextBlock>
+                                <Hyperlink>
+                                    <Image Source="MainImg/Kategor1.PNG" Margin="10" Stretch="Fill" Height="210"></Image>
+                                </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                    <Grid Width="250" x:Name="NewAndRec2">
+                        <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_2">
+                                    <Image Source="MainImg/Kategor2.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                    <Grid Width="250" x:Name="NewAndRec3">
+                        <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_3">
+                                    <Image Source="MainImg/Kategor3.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                    <Grid Width="250" x:Name="NewAndRec4">
+                        <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_4">
+                                    <Image Source="MainImg/Kategory4.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                    <Grid Width="250" x:Name="NewAndRec5">
+                        <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_5">
+                                    <Image Source="MainImg/Kategory5.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                    <Grid Width="250" x:Name="NewAndRec6">
+                        <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_6">
+                                    <Image Source="MainImg/kategory6.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </DockPanel>
+
+
+                <DockPanel Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center" Height="40">
+                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_newAndRec"/>
+                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_newAndRec1"/>
+                </DockPanel>
                 
                 
-                <DockPanel x:Name="GridCategory" Grid.ColumnSpan="3" Width="1800" Grid.Row="2">
+                
+
+                <DockPanel x:Name="GridCategory" Grid.ColumnSpan="3" Width="1800" Grid.Row="4">
                     <Grid Width="250" x:Name="GridKategory1">
                             <TextBlock>
                                 <Hyperlink Click="Hyperlink_Click_1">
@@ -190,11 +247,12 @@
                             </TextBlock>
                         </Grid>
                     </DockPanel>
-                
-                <DockPanel Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+
+                <DockPanel Grid.Row="5" Grid.ColumnSpan="3" HorizontalAlignment="Center">
                     <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click"/>
                     <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_1"/>
                 </DockPanel>
+                
             </Grid>
         </Grid>
     </ScrollViewer>
