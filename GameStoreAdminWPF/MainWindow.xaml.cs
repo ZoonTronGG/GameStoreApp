@@ -24,5 +24,22 @@ namespace GameStoreAdminWPF
         {
             InitializeComponent();
         }
-    }
+
+		private void btnAddGame_Click(object sender, RoutedEventArgs e)
+		{
+			//if (ValidateInput())
+			//{
+			//	string genre = lstGenre.SelectedValue.ToString();
+			//	//Add game to system
+			//}
+		}
+
+		private void OnPreviewMouseWheel(object sender, MouseWheelEventArgs e)
+		{
+			var scrollViewer = (ScrollViewer)sender;
+			scrollViewer.ScrollToVerticalOffset(scrollViewer.VerticalOffset - e.Delta);
+			e.Handled = true;
+		}
+
+	}
 }
