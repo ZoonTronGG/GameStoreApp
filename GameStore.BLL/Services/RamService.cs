@@ -6,7 +6,7 @@ using GameStore.BLL.DTO;
 
 namespace GameStore.BLL.Services;
 
-public class RamService : IServiceAsync<RamDto>
+public class RamService : IRepositoryAsync<RamDto>
 {
 	private readonly DataContext _dataContext;
 	public RamService()
@@ -28,7 +28,6 @@ public class RamService : IServiceAsync<RamDto>
 
 	public async Task<IEnumerable<RamDto>> GetAllItemsAsync()
 	{
-        //var rams = await _dataContext.Rams.ToListAsync();
         var rams = await _dataContext.Rams.AsNoTracking().ToListAsync();
         var result = new List<RamDto>();
 
