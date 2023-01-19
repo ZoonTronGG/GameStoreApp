@@ -50,6 +50,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="MainImg\MainImgForzaHorizon5.PNG" />
     <Resource Include="MainImg\MainRecurceCallOfDuty.3.PNG" />
   </ItemGroup>
 
@@ -73,7 +74,6 @@
     <Resource Include="MainImg\Kategory6.PNG" />
     <Resource Include="MainImg\left.PNG" />
     <Resource Include="MainImg\MainImgCallOfDuty.PNG" />
-    <Resource Include="MainImg\MainImgForzaHorizon5.PNG" />
     <Resource Include="MainImg\MainRecurceCallOfDuty.1.PNG" />
     <Resource Include="MainImg\MainRecurceCallOfDuty.2.PNG" />
     <Resource Include="MainImg\MainRecurceCallOfDuty.PNG" />
@@ -96,6 +96,31 @@
     <Resource Include="MainImg\Без названия.jpeg" />
     <Resource Include="MainImg\Kategor3.png" />
     <Resource Include="MainImg\Снимок.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resource1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resource1.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Core.Amqp" Version="1.2.0" />
+    <PackageReference Include="Elasticsearch.Net" Version="7.17.5" />
+    <PackageReference Include="Microsoft.Azure.Amqp" Version="2.6.1" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Microsoft.Azure.Amqp.Framing;
+using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
+using System.DirectoryServices;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,31 +28,35 @@ namespace GameStoreMainWPF
         
         public MainWindow()
         {
-            InitializeComponent();
-            BitmapImage[,] imageArray = new BitmapImage[2, 5];
-            string[,] imagePaths = new string[2, 5] {
+            
 
-             {"MainImg/MainImgForzaHorizon5.png", "MainImg/MainRecurceForzaHorizon5.png",
+
+            InitializeComponent();
+            string[][] imagePaths = {
+
+             new[] {"MainImg/MainImgForzaHorizon5.png", "MainImg/MainRecurceForzaHorizon5.png",
                 "MainImg/MainRecurceForzaHorizon5.1.png", "MainImg/MainRecurceForzaHorizon5.2.png", "MainImg/MainRecurceForzaHorizon5.3.png"},
-             {"MainImg/MainImgCallOfDuty.png", "MainImg/MainRecurceCallOfDuty.png",
+             new[] {"MainImg/MainImgCallOfDuty.png", "MainImg/MainRecurceCallOfDuty.png",
                 "MainImg/MainRecurceCallOfDuty.1.png", "MainImg/MainRecurceCallOfDuty.2.png", "MainImg/MainRecurceCallOfDuty.3.png"}
 
     };
-            for (int i = 0; i < 2; i++)
-            {
-                for (int j = 0; j < 5; j++)
-                {
-                    imageArray[i, j] = new BitmapImage(new Uri(imagePaths[i, j]));
-                }
-            }
+
             Random random = new Random();
-            int group = random.Next(0, imageArray.Length -1);
-            OnMainPageImg0.Source = imageArray[group, 0];
-            OnMainPageImg1.Source = imageArray[group, 1];
-            OnMainPageImg2.Source = imageArray[group,2];
-            OnMainPageImg3.Source = imageArray[group,3];
-            OnMainPageImg4.Source = imageArray[group,4];
-            
+            int groupIndex = random.Next(0, 2);
+
+            string imageSource0 = imagePaths[groupIndex][0];
+            string imageSource1= imagePaths[groupIndex][1];
+            string imageSource2= imagePaths[groupIndex][2];
+            string imageSource3= imagePaths[groupIndex][3];
+            string imageSource4= imagePaths[groupIndex][4];
+            OnMainPageImg0.Source = new BitmapImage(new Uri(imageSource0, UriKind.Relative));
+            OnMainPageImg1.Source = new BitmapImage(new Uri(imageSource1, UriKind.Relative));
+            OnMainPageImg2.Source = new BitmapImage(new Uri(imageSource2, UriKind.Relative));
+            OnMainPageImg3.Source = new BitmapImage(new Uri(imageSource3, UriKind.Relative));
+            OnMainPageImg4.Source = new BitmapImage(new Uri(imageSource4, UriKind.Relative));
+
+
+
 
 
 
