@@ -18,43 +18,78 @@ namespace GameStoreMainWPF
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    //public partial class MainWindow : Window
+    //{
+    //    private int currentImageIndex = 0;
+    //    private string[] imageFiles;
+
+    //    public MainWindow()
+    //    {
+    //        InitializeComponent();
+    //        imageFiles = Directory.GetFiles("Images");
+    //        ShowNextImage();
+    //    }
+
+    //    private void ShowNextImage()
+    //    {
+    //        if (currentImageIndex == imageFiles.Length)
+    //            currentImageIndex = 0;
+    //        Image.Source = new BitmapImage(new Uri(imageFiles[currentImageIndex]));
+    //        currentImageIndex++;
+    //    }
+
+    //    private void ShowPreviousImage()
+    //    {
+    //        if (currentImageIndex == 0)
+    //            currentImageIndex = imageFiles.Length - 1;
+    //        else
+    //            currentImageIndex--;
+    //        Image.Source = new BitmapImage(new Uri(imageFiles[currentImageIndex]));
+    //    }
+
+    //    private void NextButton_Click(object sender, RoutedEventArgs e)
+    //    {
+    //        ShowNextImage();
+    //    }
+
+    //    private void PreviousButton_Click(object sender, RoutedEventArgs e)
+    //    {
+    //        ShowPreviousImage();
+    //    }
+    //}
     public partial class MainWindow : Window
     {
-        private int currentImageIndex = 0;
-        private string[] imageFiles;
+
+        int i = 1;
 
         public MainWindow()
         {
             InitializeComponent();
-            imageFiles = Directory.GetFiles("Images");
-            ShowNextImage();
         }
 
-        private void ShowNextImage()
+        private void GoBack(object sender, RoutedEventArgs e)
         {
-            if (currentImageIndex == imageFiles.Length)
-                currentImageIndex = 0;
-            Image.Source = new BitmapImage(new Uri(imageFiles[currentImageIndex]));
-            currentImageIndex++;
+            i--;
+
+            if (i < 1)
+            {
+                i = 6;
+            }
+
+            picHolder.Source = new BitmapImage(new Uri(@"MainImg/" + i + ".jpg", UriKind.Relative));
         }
 
-        private void ShowPreviousImage()
+        private void GoNext(object sender, RoutedEventArgs e)
         {
-            if (currentImageIndex == 0)
-                currentImageIndex = imageFiles.Length - 1;
-            else
-                currentImageIndex--;
-            Image.Source = new BitmapImage(new Uri(imageFiles[currentImageIndex]));
-        }
+            i++;
 
-        private void NextButton_Click(object sender, RoutedEventArgs e)
-        {
-            ShowNextImage();
-        }
+            if (i > 6)
+            {
+                i = 1;
+            }
 
-        private void PreviousButton_Click(object sender, RoutedEventArgs e)
-        {
-            ShowPreviousImage();
+            picHolder.Source = new BitmapImage(new Uri(@"MainImg/" + i + ".jpg", UriKind.Relative));
         }
     }
+
 }

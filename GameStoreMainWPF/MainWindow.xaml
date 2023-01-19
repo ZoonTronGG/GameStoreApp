@@ -62,4 +62,26 @@
         </DockPanel>
 
     </Grid>-->
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="500"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image Name="picHolder" Grid.Column="1" Grid.Row="1" Stretch="Uniform" Source="MainImg/1.jpg"/>
+
+        <Button Name="btnBack" Click="GoBack" Grid.Column="1" Width="150" HorizontalAlignment="Left" Grid.Row="2" Height="35">Back</Button>
+        <Button Name="btnNext" Click="GoNext" Grid.Column="1" Width="150" HorizontalAlignment="Right" Grid.Row="2" Height="35">Next</Button>
+
+
+    </Grid>
+</Window>
 </Window>
