@@ -5,8 +5,247 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameStoreMainWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        MaxWidth="900" MinWidth="700"
+        
+        Title="Главное Меню" Height="450" Width="800" Background="#42525E">
+    <Window.Resources>
+        <Style x:Key="MainMenuBar">
+            <Setter Property="Control.HorizontalAlignment" Value="Stretch"></Setter>
+            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.FontSize" Value="15"></Setter>
+            <Setter Property="Control.FontWeight"  Value="Bold"></Setter>
+            <Setter Property="ItemsControl.Foreground" Value="#FFFAFA"/>
 
-    </Grid>
+        </Style>
+        <Style x:Key="BackGroundForMainMenu">
+            <Setter Property="Control.Background" Value="Blue"/>
+
+        </Style>
+        <Style x:Key="Text">
+            <Setter Property="Control.Foreground" Value="White"></Setter>
+        </Style>
+    </Window.Resources>
+    <ScrollViewer x:Name="MainScrollViewer">
+        <Grid Height="1110">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="0.2*"/>
+
+                <RowDefinition  Height="10*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="0.1*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Grid Grid.Column="1" Style="{StaticResource BackGroundForMainMenu}" Height="38" Grid.RowSpan="2" VerticalAlignment="Bottom">
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform AngleX="20" CenterX="0.5" CenterY="0.5" AngleY="86"/>
+                                <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF18B6F9" Offset="0"/>
+                        <GradientStop Color="#FF164592" Offset="1"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1.9*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="1.2"/>
+                    <ColumnDefinition Width="1.3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="0" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None">Магазин</Hyperlink></TextBlock>
+                <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="1" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None" Click="svLineUp">Новое и примечательное</Hyperlink></TextBlock>
+                <TextBlock Style="{StaticResource MainMenuBar}" Grid.Column="2" TextAlignment="Center"><Hyperlink Style="{StaticResource MainMenuBar}" TextDecorations="None" Click="Hyperlink_Click">Категории</Hyperlink></TextBlock>
+                <Grid Grid.Column="6" Margin="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <DockPanel>
+                        <TextBox x:Name="SaerchBox" Background="#4682B4" Style="{StaticResource MainMenuBar}" DockPanel.Dock="Bottom" TextWrapping="NoWrap"   ScrollViewer.HorizontalScrollBarVisibility="Hidden" TextAlignment="Center" Foreground="#FF403A3A" Height="auto" LostFocus="TextBox_LostFocus" GotFocus="SaerchBox_GotFocus"></TextBox>
+                    </DockPanel>
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.6*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="0.6*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.6*"/>
+                            <RowDefinition Height="4*"/>
+                            <RowDefinition Height="0.6*"/>
+                        </Grid.RowDefinitions>
+                        <Button Grid.Column="1" Grid.Row="1" Background="#00BFFF">
+                            <Image Source="MainImg/751463.png"></Image>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1" Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="493*"/>
+                    <ColumnDefinition Width="139*"/>
+                    <ColumnDefinition Width="135*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="240"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="240"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+
+                <DockPanel Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,0,10" Grid.RowSpan="1">
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Stretch="UniformToFill" x:Name="OnMainPageImg0"></Image>
+                        <Grid Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Image x:Name="OnMainPageImg1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
+                            <Image x:Name="OnMainPageImg2" Grid.Column="1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
+                            <Image x:Name="OnMainPageImg3" Grid.Row="1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
+                            <Image x:Name="OnMainPageImg4" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" MouseEnter="OnMainPageImg1_MouseEnter" MouseLeave="OnMainPageImg1_MouseLeave"></Image>
+                        </Grid>
+                    </Grid>
+
+                </DockPanel>
+
+                <DockPanel Grid.Row="1">
+                    
+                    
+                </DockPanel>
+
+                <DockPanel x:Name="GridNewAndRec" Grid.ColumnSpan="3" Width="1800" Grid.Row="3">
+                    <Grid Width="250" x:Name="NewAndRec1">
+                        <TextBlock>
+                                <Hyperlink>
+                                    <Image Source="MainImg/britghtinfinitememmory.PNG" Margin="10" Stretch="Fill" Height="210"></Image>
+                                </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                    <Grid Width="250" x:Name="NewAndRec2">
+                        <TextBlock>
+                                <Hyperlink>
+                                    <Image Source="MainImg/comandcounder.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                    <Grid Width="250" x:Name="NewAndRec3">
+                        <TextBlock>
+                                <Hyperlink>
+                                    <Image Source="MainImg/runchsimulator.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                    <Grid Width="250" x:Name="NewAndRec4">
+                        <TextBlock>
+                                <Hyperlink>
+                                    <Image Source="MainImg/utawarerumono.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                    <Grid Width="250" x:Name="NewAndRec5">
+                        <TextBlock>
+                                <Hyperlink>
+                                    <Image Source="MainImg/Kategory5.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                    <Grid Width="250" x:Name="NewAndRec6">
+                        <TextBlock>
+                                <Hyperlink >
+                                    <Image Source="MainImg/kategory6.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </DockPanel>
+
+
+                <DockPanel Grid.Row="4" Grid.ColumnSpan="3" HorizontalAlignment="Center" Height="40">
+                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_newAndRec"/>
+                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_newAndRec1"/>
+                </DockPanel>
+                
+                
+                
+
+                <DockPanel x:Name="GridCategory" Grid.ColumnSpan="3" Width="1800" Grid.Row="5">
+                    <Grid Width="250" x:Name="GridKategory1">
+                            <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_1">
+                                    <Image Source="MainImg/Kategor1.PNG" Margin="10" Stretch="Fill" Height="210"></Image>
+                                </Hyperlink>
+                            </TextBlock>
+                        </Grid>
+                    <Grid Width="250" x:Name="GridKategory2">
+                            <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_2">
+                                    <Image Source="MainImg/Kategor2.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                            </TextBlock>
+                        </Grid>
+                    <Grid Width="250" x:Name="GridKategory3">
+                            <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_3">
+                                    <Image Source="MainImg/Kategor3.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                            </TextBlock>
+                        </Grid>
+                    <Grid Width="250" x:Name="GridKategory4">
+                            <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_4">
+                                    <Image Source="MainImg/Kategory4.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                            </TextBlock>
+                        </Grid>
+                    <Grid Width="250" x:Name="GridKategory5">
+                            <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_5">
+                                    <Image Source="MainImg/Kategory5.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                            </TextBlock>
+                        </Grid>
+                    <Grid Width="250" x:Name="GridKategory6">
+                            <TextBlock>
+                                <Hyperlink Click="Hyperlink_Click_6">
+                                    <Image Source="MainImg/kategory6.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                </Hyperlink>
+                            </TextBlock>
+                        </Grid>
+                    </DockPanel>
+
+                <DockPanel Grid.Row="6" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click"/>
+                    <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_1"/>
+                </DockPanel>
+                
+            </Grid>
+        </Grid>
+    </ScrollViewer>
 </Window>
