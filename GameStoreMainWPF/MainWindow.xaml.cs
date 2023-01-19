@@ -20,9 +20,41 @@ namespace GameStoreMainWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int currentImageIndex = 0;
+        private string[] imageFiles;
+
         public MainWindow()
         {
             InitializeComponent();
+            imageFiles = Directory.GetFiles("Images");
+            ShowNextImage();
+        }
+
+        private void ShowNextImage()
+        {
+            if (currentImageIndex == imageFiles.Length)
+                currentImageIndex = 0;
+            Image.Source = new BitmapImage(new Uri(imageFiles[currentImageIndex]));
+            currentImageIndex++;
+        }
+
+        private void ShowPreviousImage()
+        {
+            if (currentImageIndex == 0)
+                currentImageIndex = imageFiles.Length - 1;
+            else
+                currentImageIndex--;
+            Image.Source = new BitmapImage(new Uri(imageFiles[currentImageIndex]));
+        }
+
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            ShowNextImage();
+        }
+
+        private void PreviousButton_Click(object sender, RoutedEventArgs e)
+        {
+            ShowPreviousImage();
         }
     }
 }

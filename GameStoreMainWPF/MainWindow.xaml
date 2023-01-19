@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:GameStoreMainWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <!--<Grid>
         <DockPanel x:Name="GridNewAndRec" Grid.ColumnSpan="3" Width="1800" Grid.Row="3">
             <Grid Width="250" x:Name="NewAndRec1">
                 <Grid.ColumnDefinitions>
@@ -61,5 +61,5 @@
             <Button Width="50" Height="25" Margin="15,0,15,0" Click="Button_Click_newAndRec1"/>
         </DockPanel>
 
-    </Grid>
+    </Grid>-->
 </Window>
