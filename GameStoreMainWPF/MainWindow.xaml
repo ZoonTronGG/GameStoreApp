@@ -173,14 +173,14 @@
                     <Grid Width="250" x:Name="NewAndRec5">
                         <TextBlock>
                                 <Hyperlink>
-                                    <Image Source="MainImg/Kategory5.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                    <Image Source="MainImg/oldworld.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
                                 </Hyperlink>
                         </TextBlock>
                     </Grid>
                     <Grid Width="250" x:Name="NewAndRec6">
                         <TextBlock>
                                 <Hyperlink >
-                                    <Image Source="MainImg/kategory6.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
+                                    <Image Source="MainImg/theyarebillions.PNG" Margin="10" Stretch="Fill" Height="210" ></Image>
                                 </Hyperlink>
                         </TextBlock>
                     </Grid>

@@ -34,6 +34,7 @@
     <None Remove="MainImg\MainRecurceForzaHorizon5.3.PNG" />
     <None Remove="MainImg\MainRecurceForzaHorizon5.PNG" />
     <None Remove="MainImg\NeedForSpeedHeat.PNG" />
+    <None Remove="MainImg\oldworld.PNG" />
     <None Remove="MainImg\Raft.PNG" />
     <None Remove="MainImg\right.PNG" />
     <None Remove="MainImg\runchsimulator.PNG" />
@@ -41,6 +42,7 @@
     <None Remove="MainImg\SekiroShadowsDieTwiceGOTYEdition.PNG" />
     <None Remove="MainImg\SkulTheHeroSlayer.PNG" />
     <None Remove="MainImg\ThePastWithin.PNG" />
+    <None Remove="MainImg\theyarebillions.PNG" />
     <None Remove="MainImg\TotalWarWarhammer3.PNG" />
     <None Remove="MainImg\utawarerumono.PNG" />
     <None Remove="MainImg\Vampire Survivor.PNG" />
@@ -82,6 +84,7 @@
     <Resource Include="MainImg\MainRecurceForzaHorizon5.3.PNG" />
     <Resource Include="MainImg\MainRecurceForzaHorizon5.PNG" />
     <Resource Include="MainImg\NeedForSpeedHeat.PNG" />
+    <Resource Include="MainImg\oldworld.PNG" />
     <Resource Include="MainImg\Raft.PNG" />
     <Resource Include="MainImg\right.PNG" />
     <Resource Include="MainImg\runchsimulator.PNG" />
@@ -89,6 +92,7 @@
     <Resource Include="MainImg\SekiroShadowsDieTwiceGOTYEdition.PNG" />
     <Resource Include="MainImg\SkulTheHeroSlayer.PNG" />
     <Resource Include="MainImg\ThePastWithin.PNG" />
+    <Resource Include="MainImg\theyarebillions.PNG" />
     <Resource Include="MainImg\TotalWarWarhammer3.PNG" />
     <Resource Include="MainImg\utawarerumono.PNG" />
     <Resource Include="MainImg\Vampire Survivor.PNG" />
